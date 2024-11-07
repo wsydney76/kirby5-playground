@@ -1,0 +1,73 @@
+{% set width = block.width.value() ?? 'default' %}
+
+{% set bgcolor = block.bgcolor.value() ?? '' %}
+{% set bgcolorwidth = block.bgcolorwidth ?? 'default' %}
+
+{% if not bgcolor %}
+    {% set bgcolorwidth = 'default' %}
+{% elseif width == 'full' %}
+    {% set bgcolorwidth = 'full' %}
+{% endif %}
+
+
+
+{% set classes = {
+    default: '',
+    wide: 'lg:-mx-24',
+    max: 'xl:-mx-56 lg:-mx-24',
+    full: '',
+    slim: 'lg:mx-24'
+} %}
+
+{% set html %}
+    {% include '_partials/layouts.twig' with {
+        field: block.layout
+    } only %}
+{% endset %}
+
+
+{% if bgcolorwidth == 'default' and (bgcolor or width in ['wide', 'slim', 'max']) %}
+    {# Just one wrapper for extended width and/or background color #}
+    <div class="{{ classes[width] }} {{ bgcolor ? 'p-8' : 'my-8' }}"
+            {% if bgcolor %}
+                style="background-color: {{ bgcolor }}"
+            {% endif %}
+    >
+        {{ html }}
+    </div>
+
+
+
+{% elseif bgcolorwidth == 'default' and width == 'full' and not bgcolor %}
+    {# Full width without background color #}
+    <div class="full-width px-8 my-8">
+        {{ html }}
+    </div>
+
+
+
+{% elseif bgcolorwidth == 'full'  and width == 'full' and bgcolor %}
+    {# Full width with background color #}
+    <div class="full-width p-8" style="background-color: {{ bgcolor }}">
+        {{ html }}
+    </div>
+
+
+{% elseif bgcolorwidth == 'full' and width != 'full' and bgcolor %}
+    {# Constraint width with full background color #}
+    <div class="full-width p-8" style="background-color: {{ bgcolor }}">
+        <div class="max-w-screen-md mx-auto">
+            <div class="{{ classes[width] }}">
+                {{ html }}
+            </div>
+        </div>
+    </div>
+
+{% else %}
+    {# normal flow #}
+    <div class="my-8">
+        {{ html }}
+    </div>
+
+{% endif %}
+

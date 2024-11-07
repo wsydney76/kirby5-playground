@@ -1,0 +1,31 @@
+type: toggles
+label:
+  en: Type
+  de: Typ
+reset: false
+required: true
+default: info
+options:
+  - value: info
+    text:
+      en: Info
+      de: Info
+    icon: text
+
+  - value: success
+    text:
+      en: Success
+      de: Erfolg
+    icon: check
+
+  - value: notice
+    text:
+      en: Notice
+      de: Hinweis
+    icon: info
+
+  - value: alert
+    text:
+      en: Alert
+      de: Warnung
+    icon: alert

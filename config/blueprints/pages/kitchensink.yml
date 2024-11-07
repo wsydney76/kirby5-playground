@@ -1,0 +1,48 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Kitchen Sink
+
+# Sorting number scheme that is applied when page status is changed to `listed`
+# More about page sorting: https://getkirby.com/docs/reference/panel/blueprints/page#sorting
+num: date
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 📖
+
+# Custom descriptions for each page status depending on use case
+# More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
+status:
+  draft:
+    label: Draft
+    text: The test is still in draft mode. It can only be seen by editors with panel access.
+  unlisted:
+    label: In Review
+    text: The test is online and can be visited with the direct URL. The team must still give the final go to publish it.
+  listed:
+    label: Published
+    text: The test is online and listed in the blog
+
+# Define the form layout with two columns
+# Columns are optional but help structure the form layout
+# More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
+
+tabs:
+
+  basicfields: kitchensink/tabs/basicfields
+
+  visuals: kitchensink/tabs/visuals
+
+  relations: kitchensink/tabs/relations
+
+  sizes: kitchensink/tabs/sizes
+
+  ratios: kitchensink/tabs/ratios
+
+  complex: kitchensink/tabs/complex
+
+  # custom: kitchensink/tabs/custom
+
+  layout: kitchensink/tabs/layout
+
+  # plugins: kitchensink/tabs/plugins
+
+  # nested: kitchensink/tabs/nested

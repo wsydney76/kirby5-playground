@@ -1,0 +1,21 @@
+label:
+  en: Items
+  de: Elemente
+type: structure
+fields:
+  summary:
+    label:
+      en: Summary
+      de: Zusammenfassung
+    type: text
+  details:
+    label:
+      en: Details
+      de: Details
+    type: textarea
+    buttons: false
+columns:
+  summary:
+    width: 1/3
+  details:
+    width: 2/3

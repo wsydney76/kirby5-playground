@@ -1,0 +1,13 @@
+{% set links = block.links.toStructure() %}
+
+{% if links.notEmpty %}
+    <div class="my-8 not-prose space-y-4 md:flex md:flex-wrap md:space-x-4 md:space-y-0">
+        {% for link in links %}
+            {% include '_partials/button.twig' with {
+                url: link.link.toUrl(),
+                caption: link.caption,
+                target: link.target.toBool() ? '_blank' : null
+            } only %}
+        {% endfor %}
+    </div>
+{% endif %}

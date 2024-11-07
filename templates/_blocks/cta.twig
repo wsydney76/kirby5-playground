@@ -1,0 +1,24 @@
+<div class="cta">
+    {% if block.heading.isNotEmpty %}
+        <h2>{{ block.heading }}</h2>
+    {% endif %}
+
+    {% if block.image.isNotEmpty %}
+        {% include '_blocks/layout-image.twig' %}
+    {% endif %}
+
+    {% if block.body.isNotEmpty %}
+        {{ block.body|raw }}
+    {% endif %}
+
+    {% if block.target.isNotEmpty %}
+        {% set page = block.target.toPage() %}
+        {% if page %}
+            {% set caption = block.caption.isNotEmpty ? block.caption : page.title %}
+            <div class="mt-8">
+                <a class="inline-block no-underline font-normal bg-blue-700 text-white border border-gray-300 hover:bg-blue-500 transition-colors shadow-md px-3 py-1.5 rounded-xl"
+                   href="{{ page.url }}">{{ caption }}</a>
+            </div>
+        {% endif %}
+    {% endif %}
+</div>

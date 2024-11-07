@@ -1,0 +1,17 @@
+.k-block-type-card-heading {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+
+.k-block-type-card-text {
+  line-height: 1.5;
+}
+
+.k-block-type-card .k-writer .k-text {
+  padding: 0;
+}
+
+.k-block-type-card .k-writer[data-placeholder][data-empty="true"]::before {
+  padding: 0;
+}

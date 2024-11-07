@@ -1,0 +1,43 @@
+{#
+<?php if($block->quote()->isNotEmpty()): ?>
+    <blockquote class="testimonial">
+        <p class="quote-text">
+            <?= $block->quote() ?>
+        </p>
+        <footer>
+            <figure class="flex items-center">
+                <?php if($image = $block->image()->toFile()): ?>
+                    <div class="testimonial-image">
+                        <img src="<?= $image->crop(50, 50)->url() ?>" alt="<?= $image->alt() ?>">
+                    </div>
+                <?php endif ?>
+                <figcaption>
+                    <?= implode(', ', array_filter([$block->name()->value(), $block->company()->value()])) ?>
+                </figcaption>
+            </figure>
+        </footer>
+    </blockquote>
+<?php endif; ?>#}
+
+{% if block.quote.isNotEmpty() %}
+    <div class="not-prose border-l-4 border-gray-600 py-4 px-8 bg-white">
+        <blockquote>
+            <div class=" font-bold text-xl">
+                {{ block.quote }}
+            </div>
+            <footer class="mt-4">
+                <figure class="flex items-center">
+                    {% set image = block.image.toFile %}
+                    {% if image %}
+                        <img class="rounded-full" src="{{ image.crop(80,80).url() }}">
+                    {% endif %}
+                    <figcaption class="pl-4">
+                        {{ block.name }}<br>
+                        {{ block.jobPosition }}, {{ block.company }}
+                    </figcaption>
+                    
+                </figure>
+            </footer>
+        </blockquote>
+    </div>
+{% endif %}

@@ -1,0 +1,8 @@
+type: files
+label: Images
+info: "{{ file.alt }} {{ file.width }}x{{ file.height }}"
+image:
+  cover: true
+uploads:
+  template: image2
+query: page.images

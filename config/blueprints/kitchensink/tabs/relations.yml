@@ -1,0 +1,60 @@
+label: Relations
+columns:
+  - width: 1/2
+    fields:
+      pages:
+        label: Pages
+        type: headline
+
+      related: kitchensink/fields/relatedPages
+
+      related2:
+        extends: kitchensink/fields/relatedPages
+        label: Related Pages (Cardlets)
+        layout: cardlets
+
+      related3:
+        extends: kitchensink/fields/relatedPages
+        label: Related Pages (Cards)
+        layout: cards
+        size: medium
+        image:
+          ratio: 3/2
+
+  - width: 1/2
+    fields:
+      imagesheadline:
+        label: Images
+        type: headline
+
+      images: kitchensink/fields/images
+
+      imagescardlets:
+        label: Images (Cardlets)
+        extends: kitchensink/fields/images
+        layout: cardlets
+
+      images2:
+        label: Images (Optimize Files On Upload)
+        extends: kitchensink/fields/images2
+        layout: cards
+        size: medium
+        help: Images will be cropped to 800x400px on upload
+        image:
+          ratio: 3/2
+
+  - width: 1/1
+    fields:
+      others:
+        label: Others
+        type: headline
+
+      authors:
+        width: 1/2
+        label: Authors
+        type: users
+
+      tags:
+        width: 1/2
+        label: Tags
+        type: tags

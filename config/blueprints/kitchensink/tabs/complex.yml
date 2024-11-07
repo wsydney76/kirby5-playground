@@ -1,0 +1,68 @@
+label: Complex Fields
+columns:
+  - width: 1/2
+    fields:
+      contact:
+        type: object
+        label: Object Field
+        help: Structured object input, which stores properties as YAML.
+        fields:
+          photo:
+            type: files
+          name:
+            type: text
+          email:
+            type: email
+          phone:
+            type: tel
+
+  - width: 1/2
+    fields:
+      addresses:
+        label: Structure Field
+        type: structure
+        help: Structured data input, which stores data in a field as YAML.
+        fields:
+          street:
+            label: Street
+            type: text
+            width: 1/3
+          zip:
+            label: ZIP
+            type: text
+            width: 1/3
+          city:
+            label: City
+            type: text
+            width: 1/3
+          description:
+            label: Description
+            type: textarea
+            width: 1/2
+          contact:
+            type: object
+            label: Contact
+            width: 1/2
+            fields:
+              name:
+                type: text
+              phone:
+                type: tel
+        columns:
+          street:
+            width: 2/5
+          zip:
+            width: 1/5
+          city:
+            width: 2/5
+
+  - width: 1/1
+    fields:
+      gap1:
+        type: gap
+        width: 1/6
+      blocksField:
+        type: blocks
+        label: Default Blocks Field
+        width: 2/3
+        pretty: true

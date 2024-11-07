@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .bg-layout-light {
+    @apply p-8 bg-sky-200;
+  }
+  .bg-layout-dark {
+    @apply p-8 bg-blue-700 text-white;
+  }
+
+
+  .full-width {
+    @apply ml-[calc(50%-50vw)] mr-[calc(50%-50vw)];
+  }
+}

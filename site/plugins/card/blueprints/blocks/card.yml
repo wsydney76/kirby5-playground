@@ -1,0 +1,57 @@
+name: Card
+icon: image
+fields:
+  cardType:
+    label:
+      en: Card Type
+      de: Kartentyp
+    type: radio
+    default: page
+    options:
+      page:
+        en: Create card from page
+        de: Karte aus Seite erstellen
+      manual:
+        en: Create card manually
+        de: Karte manuell erstellen
+  page:
+    type: pages
+    max: 1
+    query: site.index.listed
+    when:
+      cardType: page
+  link:
+    type: url
+    when:
+      cardType: manual
+  image:
+    label:
+      en: Image
+      de: Bild
+    type: files
+    uploads: image
+    when:
+      cardType: manual
+  heading:
+    label:
+      en: Heading
+      de: Überschrift
+    inline: true
+    marks: false
+    type: writer
+    placeholder:
+      en: Heading
+      de: Überschrift
+    when:
+      cardType: manual
+  subheading:
+    label:
+      en: Subheading
+      de: Unterüberschrift
+    type: writer
+    placeholder:
+      en: Subheading
+      de: Unterüberschrift
+    marks: false
+    when:
+      cardType: manual

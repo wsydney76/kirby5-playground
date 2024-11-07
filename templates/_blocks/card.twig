@@ -1,0 +1,34 @@
+<div class="not-prose">
+    {% if block.cardType.value() == 'page' %}
+        {% set target = block.page.toPage() %}
+        {% embed '_layouts/partials/card.twig' with {
+            image: target.featuredImage.toFile() ?? site.featuredImage.toFile(),
+            url: target.url,
+            page: target
+        } %}
+            {% block content %}
+                <div class="font-semibold text-lg">{{ page.title }}</div>
+                <div class="mt-2 text-sm">
+                    {{ page.subheading }}
+                </div>
+            {% endblock %}
+        {% endembed %}
+    {% else %}
+
+        {% embed '_layouts/partials/card.twig' with {
+            block,
+            image: block.image.toFile() ?? site.featuredImage.toFile(),
+            url: block.link,
+            page: null,
+        } only %}
+            {% block content %}
+                <div class="font-semibold text-lg">{{ block.heading }}</div>
+                <div class="mt-2 text-sm">
+                    {{ block.subheading|raw }}
+                </div>
+            {% endblock %}
+        {% endembed %}
+    {% endif %}
+
+
+</div>

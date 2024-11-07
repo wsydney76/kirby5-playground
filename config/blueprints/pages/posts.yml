@@ -1,0 +1,74 @@
+title: Posts
+tabs:
+  - label:
+      en: Work
+      de: In Arbeit
+    columns:
+      fields:
+        width: 1/1
+        fields:
+          info:
+            type: info
+            label:
+                en: Featured Image
+                de: Beitragsbild
+            width: 1/2
+            theme: empty
+            text:
+              en: The featured image of the newest post will be used for this index page.
+              de: Das Beitragsbild des neuesten Beitrags wird für diese Indexseite verwendet.
+          subheading:
+            extends: fields/text
+            label:
+              en: Subheading
+              de: Unterüberschrift
+            width: 1/2
+          heading1:
+            type: headline
+            label:
+              en: Posts in progress
+              de: Beiträge in Bearbeitung
+      drafts:
+        width: 1/2
+        sections:
+          drafts:
+            extends: sections/posts
+            label:
+              en: Drafts
+              de: Entwürfe
+            status: draft
+            help:
+              en: The page is in draft mode and is only visible after login or via the secret link
+              de: Die Seite ist im Entwurfsmodus und ist nur nach Anmeldung oder über den geheimen Link sichtbar
+      unlisted:
+        width: 1/2
+        sections:
+          unlisted:
+            extends: sections/posts
+            label:
+              en: Unlisted
+              de: Ungelistet
+            layout: cards
+            limit: 12
+            status: unlisted
+            help:
+              en: The page can only be accessed via the URL.
+              de: Die Seite kann nur über die URL aufgerufen werden.
+  - label:
+      en: Archive
+      de: Archiv
+    sections:
+        listed:
+          extends: sections/posts
+          label:
+            en: Listed
+            de: Gelistet
+          layout: table
+          info: false
+          columns:
+            subheading:
+              width: 3/6
+            date:
+              width: 1/6
+          limit: 50
+          status: listed

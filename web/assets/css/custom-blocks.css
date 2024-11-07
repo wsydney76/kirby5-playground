@@ -1,0 +1,71 @@
+:root {
+  --custom-input-font: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.k-block-type-text-input, .k-block-type-list-input {
+  font-family: var(--custom-input-font);
+  font-size: 18px;
+  line-height: 1.777777778;
+  color: rgb(51, 65, 85);
+}
+
+.k-block-type-heading-input[data-level="h2"] {
+  font-family: var(--custom-input-font);
+  font-size: 30px;
+  line-height: 1.333333;
+  font-weight: 700;
+  color: rgb(15, 23, 42);
+}
+
+.k-block-type-heading-input[data-level="h3"] {
+  font-family: var(--custom-input-font);
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: rgb(15, 23, 42);
+}
+
+.k-block-type-quote-editor {
+  border-inline-start-color: rgb(148, 163, 184);
+  border-inline-start-width: 4px;
+}
+
+.k-block-type-quote-text .k-text {
+  font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 18px;
+  line-height: 1.75rem;
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(71, 85, 105);
+}
+
+.k-block-type-quote-citation .k-text {
+  font-style: italic;
+  font-size: 18px;
+  color: rgb(71, 85, 105);
+}
+
+.k-block-type-list-input li {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.k-block-type-list-input li::marker {
+  color: #94A3B8;
+}
+
+.k-block-type-image .ProseMirror.k-text {
+  text-align: left;
+  font-size: 16px;
+}
+
+
+.k-block-container.k-block-container-fieldset-columns.k-block-container-type-fields {
+  background-color: var(--color-blue-300);
+}
+
+
+
+.k-block-container {
+  border-radius: 0;
+}

@@ -1,0 +1,50 @@
+name: Testimonial
+icon: account
+preview: testimonial
+fields:
+  quote:
+    label:
+      en: Quote
+      de: Zitat
+    type: writer
+    marks: false
+    inline: false
+    placeholder:
+      en: Quote
+      de: Zitat
+  image:
+    label:
+      en: Company logo or portrait
+      de: Firmenlogo oder Portrait
+    type: files
+    layout: cardlets
+    image:
+      cover: true
+      ratio: 1/1
+    max: 1
+  name:
+    type: writer
+    inline: true
+    marks: false
+    placeholder: Name
+  jobPosition:
+    type: writer
+    label:
+      en: Job Position
+      de: Berufsbezeichnung
+    inline: true
+    marks: false
+    placeholder:
+      en: Job Position
+      de: Berufsbezeichnung
+  company:
+    type: writer
+    label:
+      en: Company
+      de: Firma
+    inline: true
+    marks: false
+    placeholder:
+      en: Company
+      de: Firma
+

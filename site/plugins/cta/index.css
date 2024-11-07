@@ -1,0 +1,53 @@
+.k-block-type-cta .heading {
+  font-size: 30px;
+  line-height: 1.3333;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.k-block-type-cta img {
+  cursor: pointer;
+}
+
+.k-block-type-cta .body {
+  font-size: 18px;
+  line-height: 1.77778;
+  margin-top: 24px;
+}
+
+.k-block-type-cta .button {
+  margin-top: 24px;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(29, 78, 216);
+  color: white;
+  padding: 6px 12px !important;
+  border-radius: 0.75rem;
+}
+
+/* Don't let writer mess up the button */
+.k-block-type-cta .button .ProseMirror.k-text {
+  padding: 0;
+}
+
+.k-block-type-cta .box {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0F0F0;
+  color: rgb(115, 115, 115);
+  height: 96px;
+  cursor: pointer;
+}
+
+.k-block-type-cta .box svg {
+  margin-right: 12px;
+}
+
+.k-block-type-cta .info {
+  margin-top: 12px;
+  color: var(--color-gray-700);
+  cursor: pointer;
+}

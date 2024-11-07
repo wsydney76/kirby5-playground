@@ -1,0 +1,9 @@
+name:
+  en: Contact
+  de: Kontakt
+icon: user
+preview: fields
+wysiwyg: true
+label: "{{contact.name}}"
+fields:
+  contact: fields/contact

@@ -1,0 +1,7 @@
+type: infobox
+icon: info
+wysiwyg: true
+fields:
+  infoboxtype: fields/infoboxtype
+  text: fields/infoboxtext
+

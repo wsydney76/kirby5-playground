@@ -1,0 +1,34 @@
+name:
+  en: Links
+  de: Links
+icon: url
+preview: fields
+wysiwyg: true
+fields:
+  links:
+    label: ''
+    type: structure
+    empty:
+      en: No links yet
+      de: Noch keine Links
+    fields:
+      link:
+        type: link
+        required: true
+      caption:
+        label:
+          en: Caption
+          de: Beschriftung
+        type: text
+        required: true
+      target:
+        label:
+          en: Open in new window?
+          de: In neuem Fenster öffnen?
+        type: toggle
+    columns:
+      link: true
+      caption:
+        width: 1/4
+      target:
+        width: 1/6

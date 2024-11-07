@@ -1,0 +1,16 @@
+type: group
+fields:
+  featuredImage: fields/featuredImage
+  subheading:
+    extends: fields/text
+    label:
+      en: Subheading
+      de: Unterüberschrift
+  author: fields/author
+  date:
+    extends: fields/date
+    label:
+      en: Post date
+      de: Beitragsdatum
+    required: true
+  topics: fields/topics

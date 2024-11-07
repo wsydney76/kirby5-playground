@@ -1,0 +1,39 @@
+label: Sizes
+fields:
+  sizetiny:
+    extends: kitchensink/fields/relatedPages
+    label: Tiny
+    layout: cards
+    size: tiny
+    image:
+      ratio: 3/2
+  sizesmall:
+    extends: kitchensink/fields/relatedPages
+    label: Small
+    layout: cards
+    size: small
+    image:
+      ratio: 3/2
+  sizesmedium:
+    extends: kitchensink/fields/relatedPages
+    label: Medium
+    layout: cards
+    size: medium
+    image:
+      ratio: 3/2
+  sizeslarge:
+    extends: kitchensink/fields/relatedPages
+    label: Large
+    layout: cards
+    size: large
+    info: "{{ page.subheading }}"
+    image:
+      ratio: 3/2
+  sizeshuge:
+    extends: kitchensink/fields/relatedPages
+    label: Huge
+    layout: cards
+    size: huge
+    info: "{{ page.subheading }}"
+    image:
+      ratio: 3/2

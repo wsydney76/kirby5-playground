@@ -1,0 +1,68 @@
+name: CTA
+icon: page
+wysiwyg: true
+fields:
+  heading:
+    label:
+      en: Heading
+      de: Überschrift
+    type: writer
+    nodes: false
+    marks: false
+    inline: true
+    required: true
+    placeholder:
+      en: CTA heading
+      de: CTA-Überschrift
+  image:
+    label: field.blocks.image.name
+    type: files
+    query: model.images
+    layout: cardlets
+    info: '{{file.alt}}<br>{{file.copyright}}'
+    multiple: false
+    required: true
+    empty:
+      en: Select CTA image
+      de: CTA-Bild auswählen
+    image:
+      cover: true
+  body:
+    label:
+      en: Body
+      de: Text
+    type: writer
+    required: true
+    nodes: false
+    marks:
+      - bold
+      - italic
+      - link
+    placeholder:
+      en: CTA text
+      de: CTA-Text
+  target:
+    label:
+      en: Target
+      de: Ziel
+    type: pages
+    layout: cardlets
+    multiple: false
+    required: true
+    empty:
+      en: Select CTA target page
+      de: CTA-Zielseite auswählen
+    image:
+      cover: true
+  caption:
+    label:
+      en: Caption
+      de: Beschriftung
+    type: writer
+    required: true
+    nodes: false
+    marks: false
+    inline: true
+    placeholder:
+      en: Enter a caption
+      de: Beschriftung eingeben

@@ -1,0 +1,23 @@
+label: Aspect Ratios
+fields:
+  ratiosquare:
+    extends: kitchensink/fields/relatedPages
+    label: 1/1 format
+    layout: cards
+    size: large
+    image:
+      ratio: 1/1
+  ratiohigh:
+    extends: kitchensink/fields/relatedPages
+    label: 3/4 format
+    layout: cards
+    size: large
+    image:
+      ratio: 3/4
+  ratiolandscape:
+    extends: kitchensink/fields/relatedPages
+    label: 21/9 format
+    layout: cards
+    size: large
+    image:
+      ratio: 21/9

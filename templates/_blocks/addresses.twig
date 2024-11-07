@@ -1,0 +1,27 @@
+{% set addresses = block.addresses().toStructure() %}
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+    {% for address in addresses %}
+        <div>
+            <div class="font-bold text-xl">
+                {{ address.label }}
+            </div>
+            <div>
+                {{ address.addressLine1 }}<br>
+                {{ address.zip }} {{ address.city }}, {{ address.country }}
+            </div>
+
+
+            {% if address.contact.isNotEmpty %}
+                <div class="mt-4">
+                    {% include '_partials/contact.twig' with {
+                        heading: 'Contact'|t,
+                        contact: address.contact()
+                    } only %}
+                </div>
+            {% endif %}
+
+            
+        </div>
+    {% endfor %}
+</div>

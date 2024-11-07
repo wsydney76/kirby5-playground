@@ -1,0 +1,17 @@
+type: pages
+label:
+  en: Pages
+  de: Seiten
+image:
+  field: featuredImage
+  cover: true
+create:
+  - default
+  - layout
+templates:
+  - default
+  - layout
+  - posts
+  - search
+  - topics
+  - error

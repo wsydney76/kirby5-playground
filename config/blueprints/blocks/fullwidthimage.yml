@@ -1,0 +1,45 @@
+name:
+  en: Full Width Image
+  de: Bild in voller Breite
+icon: image
+# other preview values can break the layout, so we'll just use the image field's preview
+wysiwyg: true
+preview: fields
+fields:
+  image:
+    extends: fields/singleImage
+    layout: cards
+    size: full
+    image:
+      ratio: 5/1
+    width: 1/1
+    help:
+      en: This image will be expanded to fill the full width of the screen.
+      de: Dieses Bild wird über die gesamte Breite des Bildschirms erweitert.
+  caption:
+    extends: fields/text
+    label:
+      en: Caption
+      de: Bildbeschriftung
+    width: 1/3
+  darken:
+    type: toggle
+    label:
+      en: Darken
+      de: Verdunkeln
+    width: 1/3
+    default: false
+    help:
+      en: Darken the image to make text more readable.
+      de: Verdunkeln Sie das Bild, um den Text besser lesbar zu machen.
+  tag:
+    type: select
+    width: 1/3
+    default: "div"
+    options:
+      - div
+      - h2
+      - h3
+    help:
+      en: HTML tag to use for the caption.
+      de: HTML-Tag für die Bildbeschriftung

@@ -1,0 +1,10 @@
+type: pages
+label:
+  en: Topics
+  de: Themen
+create:
+  - topic
+parent: page('topics')
+query: page('topics').index
+image:
+  cover: true

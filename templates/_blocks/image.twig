@@ -1,0 +1,43 @@
+{% set ratio = block.ratio.value() ?: 'auto' %}
+
+{% set crop = block.crop.isTrue() %}
+
+{# TODO: FULLWIDTH #}
+<figure class="{{ block.wide.isTrue() ? 'lg:-mx-24' }}">
+    {% if block.location == 'web' and block.src %}
+
+        {% include '_partials/external_image.twig' with {
+        	src: block.src,
+            alt: block.alt,
+            ratio: ratio
+        } only %}
+
+    {% else %}
+
+        {% include '_partials/site_image.twig' with {
+        	image: block.image.toFile(),
+            ratio: ratio,
+            wide: block.wide.isTrue(),
+            crop: block.crop.isTrue()
+        } only %}
+
+
+    {% endif %}
+
+    {# Add caption if one of caption or image copyright is present #}
+    {% if block.caption.isNotEmpty or (image is defined and image.copyright.isNotEmpty) %}
+        <figcaption class="flex justify-between">
+            <div>
+                {{ block.caption }}
+            </div>
+            {% if image is defined and image.copyright.isNotEmpty %}
+                {# Make that a bit smaller #}
+                {# We don't use an overlay here because having an overlay on the image
+                    and a caption below looks messed up. #}
+                <div class="text-sm text-brand-500">({{ 'Photo'|t }}: {{ image.copyright }})</div>
+            {% endif %}
+        </figcaption>
+    {% endif %}
+
+</figure>
+

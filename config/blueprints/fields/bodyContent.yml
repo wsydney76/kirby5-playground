@@ -1,0 +1,62 @@
+type: blocks
+label:
+  en: Content
+  de: Inhalt
+fieldsets:
+  default:
+    label:
+      en: Default
+      de: Standard
+    type: group
+    fieldsets:
+      - text
+      - heading
+      - type: image
+        extends: blocks/image
+        fields:
+          link: false
+          alt:
+            when:
+              location: web
+          ratio:
+            width: 1/3
+            default: 16/9
+            options:
+              3/4: "3:4"
+              4/5: "4:5"
+          crop:
+            width: 1/3
+            default: true
+            when:
+              location: kirby
+          wide:
+            type: toggle
+            width: 1/3
+            default: false
+      - extendedQuote
+  special:
+    label:
+      en: Special
+      de: Speziell
+    type: group
+    fieldsets:
+      - list
+      - special
+      - markdown
+      - code
+      - columns
+      - fullwidthimage
+  experiments:
+    label:
+      en: Experiments
+      de: Experimente
+    type: group
+    open: false
+    fieldsets:
+      - accordion
+      - infobox
+      - links
+      - testimonial
+      - audio
+pretty: true
+

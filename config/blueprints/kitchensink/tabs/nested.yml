@@ -1,0 +1,5 @@
+label: Nested
+columns:
+  - width: 3/3
+    fields:
+      entityBlocks: kitchensink/fields/nestedContent

@@ -1,0 +1,17 @@
+Title: Kirby Playground - Dashboard
+
+----
+
+Sitename: Kirby Playground
+
+----
+
+Featuredimage: - file://mYbxAWXTlBfu9126
+
+----
+
+Copyright: Perlen vor die Säue GmbH
+
+----
+
+Shortdateformat: m/d/Y

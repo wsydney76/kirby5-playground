@@ -1,0 +1,29 @@
+title: Layout page
+
+tabs:
+  - label: Content
+    columns:
+      main:
+        width: 3/4
+        sections:
+          fields:
+            type: fields
+            fields:
+              featuredImage:
+                extends: fields/featuredImage
+                layout: cards
+                image:
+                  ratio: 3/1
+                size: full
+              layout: fields/layout
+      sidebar:
+        width: 1/4
+        sections:
+          files: sections/files
+  - label: Adresses
+    sections:
+      addressesfields:
+        type: fields
+        fields:
+          addresses: fields/addresses
+

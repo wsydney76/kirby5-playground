@@ -1,0 +1,36 @@
+{% from '_macros/lib.twig' import img %}
+
+{% set file = block.source().toFile() %}
+{% set poster = block.poster().toFile() %}
+{% if file %}
+    <div class="not-prose my-8 flex bg-gray-950 text-white">
+        {% if poster %}
+            <figure class="flex-shrink-0">
+                {#{{ poster.crop(200, 280)|raw }}#}
+                {{ img(poster, {
+                    transform: {width: 200, height: 250},
+                    attr: {
+                        class: 'object-cover object-center w-full h-full'
+                    }
+                }) }}
+            </figure>
+        {% endif %}
+        <div class="px-8 py-4 flex items-center">
+            <div>
+                <h2 class="text-2xl font-semibold">{{ block.title() }}</h2>
+                <h3 class="mt-2 text-2xl text-gray-300">{{ block.subtitle() }}</h3>
+                <div class="mt-4 text-sm">
+                    {{ block.description|purify|nl2br }}
+                </div>
+                <audio class="mt-8 h-8"
+                        {{ block.controls().isTrue ? 'controls' }}
+                        {{ block.autoplay().isTrue ? 'autoplay' }}
+                >
+                    <source src="{{ file.url() }}" type="{{ file.mime() }}">
+                    Your browser does not support the <code>audio</code> element.
+                </audio>
+            </div>
+        </div>
+    </div>
+{% endif %}
+

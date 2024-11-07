@@ -1,0 +1,9 @@
+type: pages
+label:
+  en: Topics
+  de: Themen
+query: page('topics').index
+
+empty:
+  en: There are no topics yet.
+  de: Es gibt noch keine Themen.

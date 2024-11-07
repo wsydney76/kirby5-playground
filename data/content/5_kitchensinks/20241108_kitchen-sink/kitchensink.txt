@@ -1,0 +1,546 @@
+Title: Kitchen Sink
+
+----
+
+Textfield: Vestibulum ante ipsum primis in idem
+
+----
+
+Slugfield: vestibulum-ante-ipsum-primis-in
+
+----
+
+Slugfield2: vestibulum-ante-ipsum-primis-in-idem
+
+----
+
+Textareafield:
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Morbi mattis ullamcorper velit. Maecenas nec odio et ante tincidunt tempus. Curabitur blandit mollis lacus.
+
+Aliquam lobortis. Aenean viverra rhoncus pede. Ut tincidunt tincidunt erat. Maecenas nec odio et ante tincidunt tempus. Quisque rutrum.
+
+----
+
+Writerfield: <p>Morbi vestibulum volutpat enim. Morbi vestibulum volutpat enim. Fusce neque. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum.</p><p><a href="/@/page/SOYSAlWl0xPRBa7n">Duis leo. Integer tincidunt. </a>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Nullam quis ante. Cras varius.</p>
+
+----
+
+Writerfield2: <p>Morbi vestibulum volutpat enim. Morbi vestibulum volutpat enim. Fusce neque. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum.</p><p><strong>Duis leo. Integer tincidunt.</strong> Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Nullam quis ante. Cras varius.</p>
+
+----
+
+Writerfield3: <p>Suspendisse feugiat. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Pellentesque dapibus hendrerit tortor. Phasellus consectetuer vestibulum elit. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.</p>
+
+----
+
+Listfield: <ul><li>Nullam nulla eros ultricies sit</li><li>Fusce fermentum odio nec arcu</li><li>Suspendisse nisl elit rhoncus eget</li></ul>
+
+----
+
+Link: https://example.com
+
+----
+
+Link2: page://SOYSAlWl0xPRBa7n
+
+----
+
+Link3: file://6mbZme2PxCOwoBsf
+
+----
+
+Int: 6
+
+----
+
+Price: 19.98
+
+----
+
+Datefield: 2024-11-01
+
+----
+
+Timefield: 20:15:00
+
+----
+
+Datetimefield: 2024-11-15 16:32:00
+
+----
+
+Emailfield: mail@example.com
+
+----
+
+Telfield: +49 1234 56789
+
+----
+
+Urlfield: https://example.com
+
+----
+
+Togglefield: true
+
+----
+
+Checkboxesfield: design, architecture
+
+----
+
+Radiofield: photography
+
+----
+
+Selectfield: design
+
+----
+
+Multiselectfield: design, architecture
+
+----
+
+Togglesfield2: right
+
+----
+
+Togglesfield: left
+
+----
+
+Rangefield: 64
+
+----
+
+Color1: #c06c84
+
+----
+
+Color3: #456ade
+
+----
+
+Color2: #6c5b7b
+
+----
+
+Related:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Related2:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Related3:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Images:
+
+- file://6KjGJmFXalvbSbDq
+- file://nvuU9x6z3rzsulmE
+- file://BORHJ5snImRT8yo8
+
+----
+
+Imagescardlets:
+
+- file://urLWJyS9DPvlflNF
+- file://U5krAPABycjuqHRJ
+- file://7qATyysiRHHq6vCS
+
+----
+
+Images2:
+
+- file://BORHJ5snImRT8yo8
+- file://nvuU9x6z3rzsulmE
+- file://1m8ggMQklfxu078x
+
+----
+
+Authors: 
+
+----
+
+Tags: Test, Demo
+
+----
+
+Sizetiny:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Sizesmall:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Sizesmedium:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Sizeslarge:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Sizeshuge:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Ratiosquare:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Ratiohigh:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Ratiolandscape:
+
+- page://91WdH9M6xNXJoNq4
+- page://qAZnwh7gtbmamigE
+- page://YxpYkHrWgINJI6ue
+
+----
+
+Contact:
+
+photo:
+  - file://6KjGJmFXalvbSbDq
+name: Jane Doe
+email: main@example.com
+phone: +49 123 45678
+
+----
+
+Addresses:
+
+- 
+  street: Seestraße 12
+  zip: "12345"
+  city: Hamburg
+  description: |
+    Praesent ac sem eget est egestas volutpat. Curabitur turpis. Praesent ac sem eget est egestas volutpat.
+    
+    Vestibulum ullamcorper mauris at ligula. Suspendisse non nisl sit amet velit hendrerit rutrum. Nullam cursus lacinia erat.
+  contact:
+    name: Sabine Mustermann
+    phone: +49 987 54321
+- 
+  street: Hauptstraße 12a
+  zip: "98765"
+  city: Berlin
+  description: |
+    Nullam vel sem. Praesent nonummy mi in odio. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Sed a libero. Curabitur ullamcorper ultricies nisi.
+    
+    Phasellus ullamcorper ipsum rutrum nunc. Morbi ac felis. Cras id dui. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.
+  contact:
+    name: Max Mustermann
+    phone: +49 555 77777
+- 
+  street: Marktplatz 18
+  zip: "55555"
+  city: KLeinfinstenich
+  description: >
+    Pellentesque auctor neque nec urna.
+    Pellentesque dapibus hendrerit tortor.
+    Cras dapibus. Ut a nisl id ante tempus
+    hendrerit.
+  contact: ""
+
+----
+
+Blocksfield:
+
+[
+    {
+        "content": {
+            "level": "h2",
+            "text": "Class aptent taciti sociosqu ad"
+        },
+        "id": "e49e0017-6e65-45f5-9046-8312737474a8",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>Pellentesque auctor neque nec urna. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed cursus turpis vitae tortor. Phasellus nec sem in justo pellentesque facilisis.</p><p>Sed aliquam ultrices mauris. Curabitur ullamcorper ultricies nisi. Sed aliquam ultrices mauris. Pellentesque commodo eros a enim. Morbi mattis ullamcorper velit.</p>"
+        },
+        "id": "98bf7500-9c19-43c7-861b-69fcf1ccc20e",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "location": "kirby",
+            "image": [
+                "file://1m8ggMQklfxu078x"
+            ],
+            "src": "",
+            "alt": "Alt Text",
+            "caption": "Maecenas tempus tellus eget condimentum",
+            "link": "https://example.com",
+            "ratio": "21/9",
+            "crop": "true"
+        },
+        "id": "90feac6f-ccac-4344-a609-b5bd741d3312",
+        "isHidden": false,
+        "type": "image"
+    },
+    {
+        "content": {
+            "text": "<p>Etiam vitae tortor. Quisque rutrum. Nam pretium turpis et arcu. Nullam quis ante. Nulla sit amet est.</p><p>Sed hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas nec odio et ante tincidunt tempus. Aliquam eu nunc. Phasellus viverra nulla ut metus varius laoreet.</p>"
+        },
+        "id": "9375770f-f31a-4f08-af11-e668109ce687",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "images": [
+                "file://6KjGJmFXalvbSbDq",
+                "file://uNaDktMJg5gritK1",
+                "file://RqUD45CjrigoD9Fn",
+                "file://urLWJyS9DPvlflNF",
+                "file://U5krAPABycjuqHRJ",
+                "file://7qATyysiRHHq6vCS"
+            ],
+            "caption": "Sed cursus turpis vitae tortor",
+            "ratio": "16/9",
+            "crop": "true"
+        },
+        "id": "67e6f6f9-b346-46f0-9351-adbbf24b021a",
+        "isHidden": false,
+        "type": "gallery"
+    },
+    {
+        "content": {
+            "text": "Ut non enim eleifend felis. Vivamus aliquet elit ac nisl",
+            "citation": "In dui magna"
+        },
+        "id": "c33beabf-1f25-4488-923d-f0a78abd6ece",
+        "isHidden": false,
+        "type": "quote"
+    }
+]
+
+----
+
+Layoutfield:
+
+[
+    {
+        "attrs": {
+            "class": "",
+            "id": "",
+            "image": [],
+            "color": ""
+        },
+        "columns": [
+            {
+                "blocks": [
+                    {
+                        "content": {
+                            "level": "h2",
+                            "text": "In consectetuer turpis ut velit"
+                        },
+                        "id": "00aac009-112c-484b-bb97-34e161b51905",
+                        "isHidden": false,
+                        "type": "heading"
+                    }
+                ],
+                "id": "23d71446-f36b-4033-b61d-b35b7c2ada9a",
+                "width": "1/1"
+            }
+        ],
+        "id": "48c2e8d6-fe33-4c5e-8575-37a14810873c"
+    },
+    {
+        "attrs": {
+            "class": "",
+            "id": "",
+            "image": [],
+            "color": ""
+        },
+        "columns": [
+            {
+                "blocks": [
+                    {
+                        "content": {
+                            "location": "kirby",
+                            "image": [
+                                "file://RqUD45CjrigoD9Fn"
+                            ],
+                            "src": "",
+                            "alt": "Vivamus aliquet elit ac nisl",
+                            "caption": "Nam at tortor in tellus",
+                            "link": "",
+                            "ratio": "",
+                            "crop": "false"
+                        },
+                        "id": "7fede64f-488f-47d3-bf8b-8a7f1f9b7bce",
+                        "isHidden": false,
+                        "type": "image"
+                    }
+                ],
+                "id": "a119f740-4d27-4345-b849-479ac839757f",
+                "width": "1/3"
+            },
+            {
+                "blocks": [
+                    {
+                        "content": {
+                            "level": "h2",
+                            "text": "Phasellus viverra nulla ut metus"
+                        },
+                        "id": "c508266a-7d6b-44a8-bf70-48730caf07ab",
+                        "isHidden": false,
+                        "type": "heading"
+                    },
+                    {
+                        "content": {
+                            "text": "<p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Phasellus gravida semper nisi. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Fusce vulputate eleifend sapien. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.</p><p>Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. In hac habitasse platea dictumst. Fusce fermentum odio nec arcu. Sed libero.</p>"
+                        },
+                        "id": "1bb87b94-c310-4b80-8a57-cb1697a9ad19",
+                        "isHidden": false,
+                        "type": "text"
+                    }
+                ],
+                "id": "163daab5-c34d-4a60-9b18-8263615db372",
+                "width": "2/3"
+            }
+        ],
+        "id": "dba278cf-4907-46df-bebd-846eee90f9b5"
+    },
+    {
+        "attrs": {
+            "class": "",
+            "id": "",
+            "image": [],
+            "color": ""
+        },
+        "columns": [
+            {
+                "blocks": [
+                    {
+                        "content": {
+                            "level": "h3",
+                            "text": "Fusce ac felis sit amet"
+                        },
+                        "id": "d90ac111-c6be-4479-9b14-7db9c71dedc2",
+                        "isHidden": false,
+                        "type": "heading"
+                    },
+                    {
+                        "content": {
+                            "text": "<p>In turpis. Morbi vestibulum volutpat enim. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Sed cursus turpis vitae tortor. Vestibulum ullamcorper mauris at ligula.</p><p>Etiam imperdiet imperdiet orci. Vivamus consectetuer hendrerit lacus. Curabitur suscipit suscipit tellus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque ut neque.</p>"
+                        },
+                        "id": "c23db2d2-4d97-4eeb-8497-628c31af8b32",
+                        "isHidden": false,
+                        "type": "text"
+                    }
+                ],
+                "id": "e36efa35-05e3-4dee-a653-ca95b9e555a0",
+                "width": "1/3"
+            },
+            {
+                "blocks": [
+                    {
+                        "content": {
+                            "level": "h3",
+                            "text": "Fusce ac felis sit amet"
+                        },
+                        "id": "64f7bc47-bc4c-4fd2-88d9-8ca95b3a00da",
+                        "isHidden": false,
+                        "type": "heading"
+                    },
+                    {
+                        "content": {
+                            "text": "<p>In turpis. Morbi vestibulum volutpat enim. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Sed cursus turpis vitae tortor. Vestibulum ullamcorper mauris at ligula.</p><p>Etiam imperdiet imperdiet orci. Vivamus consectetuer hendrerit lacus. Curabitur suscipit suscipit tellus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque ut neque.</p>"
+                        },
+                        "id": "09a007ca-0972-4cc1-a511-689d86168a1c",
+                        "isHidden": false,
+                        "type": "text"
+                    }
+                ],
+                "id": "187e838a-bdcf-4315-923f-0e651cbb6ad4",
+                "width": "1/3"
+            },
+            {
+                "blocks": [
+                    {
+                        "content": {
+                            "level": "h3",
+                            "text": "Fusce ac felis sit amet"
+                        },
+                        "id": "11c5cb40-3498-4d4f-adf7-123cab26b05e",
+                        "isHidden": false,
+                        "type": "heading"
+                    },
+                    {
+                        "content": {
+                            "text": "<p>In turpis. Morbi vestibulum volutpat enim. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Sed cursus turpis vitae tortor. Vestibulum ullamcorper mauris at ligula.</p><p>Etiam imperdiet imperdiet orci. Vivamus consectetuer hendrerit lacus. Curabitur suscipit suscipit tellus. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Pellentesque ut neque.</p>"
+                        },
+                        "id": "eef912b0-921c-44d4-9332-9986466cb69a",
+                        "isHidden": false,
+                        "type": "text"
+                    }
+                ],
+                "id": "784e39db-134a-44fb-a0da-5f4693310c83",
+                "width": "1/3"
+            }
+        ],
+        "id": "a189a839-d04d-48c8-97f1-3a145b442070"
+    }
+]
+
+----
+
+Uuid: udwGUvS6QD7EjIE9
+
+----
+
+Headline: 

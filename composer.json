@@ -1,0 +1,46 @@
+{
+  "name": "wsydney76/kirby4-playground",
+  "description": "Kirby 4 Playground",
+  "version": "2.0.0",
+  "type": "project",
+  "keywords": [
+    "kirby",
+    "cms",
+    "tutorial"
+  ],
+  "authors": [
+    {
+      "name": "wsydney76",
+      "homepage": "https://github.com/wsydney76/kirby4-tutorial"
+    }
+  ],
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "getkirby/cms": "^4.0",
+    "wearejust/kirby-twig": "^5.0",
+    "vlucas/phpdotenv": "^5.6",
+    "illuminate/collections": "^10.40",
+    "ezyang/htmlpurifier": "^4.6",
+    "getkirby/cli": "^1.5"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    },
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "site\\": "site/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8000 kirby/router.php"
+    ]
+  }
+}

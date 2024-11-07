@@ -1,0 +1,12 @@
+{# requires JavaScript from _layouts/partials/bodyend.twig #}
+<script>
+    document.addEventListener('play', function(e) {
+        var allAudios = document.getElementsByTagName('audio');
+        for(var i = 0; i < allAudios.length; i++) {
+            if(allAudios[i] !== e.target) {
+                allAudios[i].pause();
+                allAudios[i].currentTime = 0; // Optionally reset the audio to the start
+            }
+        }
+    }, true);
+</script>

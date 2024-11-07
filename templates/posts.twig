@@ -1,0 +1,25 @@
+{# The post index page #}
+
+{# @param page Page #}
+{# @param posts Ppage] #}
+{# @param latestPost Page #}
+{# @param pagination Pagination #}
+
+{% extends "_layouts/main.twig" %}
+
+
+{% do _globals.set({
+    featuredImage: latestPost ? latestPost.featuredImage.toFile() : null,
+    mainWidth: 'xl'
+}) %}
+
+{% block content %}
+    
+    {{ parent() }}
+
+    {% include '_partials/pages-cards.twig' with {
+        pages: posts,
+        pagination
+    } only %}
+
+{% endblock %}

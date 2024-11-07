@@ -1,0 +1,32 @@
+label: plugins
+fields:
+  gap6:
+    type: gap
+    width: 1/6
+  multilist:
+    label: Multilist example
+    type: multilist
+    help: Allow inline editing
+    width: 2/3
+    fields:
+      name:
+        label: Item name
+        type: text
+      date:
+        label: Release date
+        type: date
+      toggle:
+        label: Listed?
+        type: toggle
+  gap6a:
+    type: gap
+    width: 1/6
+  gap5:
+    type: gap
+    width: 1/6
+  table:
+    label: Table example
+    help: Create columns on demand
+    type: table
+    width: 2/3
+

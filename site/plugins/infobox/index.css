@@ -1,0 +1,40 @@
+.k-block-type-infobox > div {
+  color: rgb(30 58 138);
+  background-color: rgb(191 219 254) ;
+  border: 1px solid rgb(29 78 216);
+  border-radius: 4px;
+
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+}
+
+.k-block-type-infobox strong {
+  font-weight: 700;
+}
+
+.k-block-type-infobox > div[data-type="success"] {
+  color: rgb(20 83 45);
+  background-color: rgb(187 247 208) ;
+  border: 1px solid rgb(21 128 61);
+}
+
+.k-block-type-infobox > div[data-type="notice"] {
+  color: rgb(113 63 18);
+  background-color: rgb(254 240 138);
+  border: 1px solid rgb(161 98 7);
+}
+
+.k-block-type-infobox > div[data-type="alert"] {
+  color: rgb(127 29 29);
+  background-color: rgb(254 202 202);
+  border: 1px solid rgb(185 28 28);
+}
+
+.k-block-type-infobox .k-select-input {
+  font-size: 14px !important;
+  margin-right: 4px;
+}
+

@@ -1,0 +1,37 @@
+<div class="space-y-12">
+    {% for layout in field.toLayouts %}
+        {% set class = layout.attrs.class ?? '' %}
+
+        {# Grid layout for wider screens #}
+        <section class="grid grid-cols-1 gap-8 lg:grid-cols-12 {{ class }}">
+
+            {% for column in layout.columns %}
+
+                {# All available col-span classes have to be whitelisted in tailwind.config.js #}
+                <div class="layout-column lg:col-span-{{ column.span }} prose prose-lg max-w-none">
+
+                    {% for block in column.blocks %}
+
+                        {% include "_blocks/#{block.type|kebab}.twig" with {
+                            blocks: column.blocks,
+                            block,
+                            layout: true,
+                            span: column.span
+                        } only %}
+
+                    {% endfor %}
+
+                </div>
+
+            {% endfor %}
+
+        </section>
+    {% endfor %}
+</div>
+
+<style>
+.layout-column > .cta {
+    margin-top: -56px;
+}
+</style>
+

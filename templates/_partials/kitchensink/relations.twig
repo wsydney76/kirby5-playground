@@ -1,0 +1,94 @@
+{% from '@templates/macros/lib.twig' import img %}
+
+<div class="space-y-4">
+
+    <div>
+        Link field:
+        {% set link = page.link().toString() %}
+        {% if link starts with 'http://' or link starts with 'https://' %}
+            <a href="{{ link }}">External Link</a>
+        {% elseif link starts with 'page://' %}
+            {% set linkedPage = page.link().toPage() %}
+            {% if linkedPage %}
+                <a href="{{ linkedPage.url }}">{{ linkedPage.title }}</a>
+            {% endif %}
+        {% elseif link starts with 'file://' %}
+            {% set linkedFile = page.link().toFile() %}
+            {% if linkedFile %}
+                {{ img(linkedFile, {
+                    transform: {width: 150, ratio: '16/9'}
+                }) }}
+            {% endif %}
+        {% elseif link starts with 'tel:' %}
+            <a href="{{ link }}">Tel</a>
+        {% elseif link starts with 'mailto:' %}
+            <a href="{{ link }}">E-Mail</a>
+        {% elseif link starts with '#' %}
+            <a href="{{ link }}">Anchor</a>
+        {% else %}
+            Raw: {{ link }}
+        {% endif %}
+
+
+    </div>
+
+    <div>
+        {% set pages = page.related.toPages %}
+
+        {% for page in pages %}
+            <div>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set pages = page.related2.toPages %}
+
+        {% for page in pages %}
+            <div>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set pages = page.related3.toPages %}
+
+        {% for page in pages %}
+            <div>
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set images = page.images1.toFiles %}
+
+        <div class="flex">
+            {% for image  in images %}
+
+                {{ img(image, {
+                    transform: {width: 150, ratio: '16/9'}
+                }) }}
+
+            {% endfor %}
+        </div>
+    </div>
+
+    <div>
+        {% set images = page.images2.toFiles %}
+
+        <div class="flex">
+            {% for image  in images %}
+
+                {{ img(image, {
+                    transform: {width: 150, ratio: '16/9'}
+                }) }}
+
+            {% endfor %}
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,17 @@
+<div class="space-y-4 links">
+    <div>
+        {{ page.emailfield }} {{ page.emailfield|email }}
+    </div>
+    <div>
+        {{ page.telfield.phone }} {{ page.telfield.phone|tel }}
+    </div>
+    <div>
+        {{ page.urlfield }} {{ page.urlfield|a('A Link 2') }}
+    </div>
+</div>
+
+<style>
+.links a {
+    text-decoration: underline;
+}
+</style>

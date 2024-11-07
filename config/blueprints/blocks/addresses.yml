@@ -1,0 +1,8 @@
+name:
+  en: Addresses
+  de: Adressen
+preview: fields
+wysiwyg: true
+icon: user
+fields:
+  addresses: fields/addresses

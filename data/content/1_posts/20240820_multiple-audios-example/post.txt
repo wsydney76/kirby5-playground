@@ -1,0 +1,93 @@
+Title: Multiple Audios Example
+
+----
+
+Bodycontent:
+
+[
+    {
+        "content": {
+            "text": "<p><a href=\"https://getkirby.com/docs/guide/page-builder/complex-custom-block\">From Kirby cookbook</a></p>"
+        },
+        "id": "97dd50ab-f76f-40ba-add1-220f479ab861",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "poster": [
+                "file://62A8MYoiIHH5p8Ww"
+            ],
+            "source": [
+                "file://AZWwOcmnhWttbsGb"
+            ],
+            "title": "Georg Kreisler: Im Park",
+            "subtitle": "Die alten, bösen Lieder",
+            "description": "Schatz, das Wetter ist wunderschön<br>Da leid ich's net länger zuhaus...",
+            "controls": "true",
+            "autoplay": "true"
+        },
+        "id": "c5266673-2bea-4fae-a96e-d6d5cd3a0f7f",
+        "isHidden": false,
+        "type": "audio"
+    },
+    {
+        "content": {
+            "poster": [
+                "file://enqhKYsMikDZy89D"
+            ],
+            "source": [
+                "file://FnUUSahupb9xGzel"
+            ],
+            "title": "Ute Lemper: Ich weiß nicht, zu wem ich gehöre",
+            "subtitle": "Berlin Cabaret Songs",
+            "description": "ich bin doch zu schade für einen allein...",
+            "controls": "true",
+            "autoplay": "false"
+        },
+        "id": "e5b12542-67c7-462a-83d6-2bab455785ee",
+        "isHidden": false,
+        "type": "audio"
+    },
+    {
+        "content": {
+            "text": "<p>Multiple audios on one page require a bit of JavaScript to ensure that only one song is played at a time.</p>"
+        },
+        "id": "9d0bcf4f-2e09-4b50-a353-2a0ddaed7d55",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "code": "document.addEventListener('play', function(e) {\n    var allAudios = document.getElementsByTagName('audio');\n    for(var i = 0; i < allAudios.length; i++) {\n        if(allAudios[i] !== e.target) {\n            allAudios[i].pause();\n            allAudios[i].currentTime = 0; // Optionally reset the audio to the start\n        }\n    }\n}, true);",
+            "language": "js"
+        },
+        "id": "8c50e85c-480b-4e14-bb2f-086e7caa4677",
+        "isHidden": false,
+        "type": "code"
+    }
+]
+
+----
+
+Featuredimage: - file://7YhHWnFmG6QTQPEc
+
+----
+
+Subheading: Some favorte songs
+
+----
+
+Author: - user://3f6MDCar
+
+----
+
+Date: 2024-08-20 06:25:00
+
+----
+
+Topics: 
+
+----
+
+Uuid: gRn71zYgY0nrrMD2

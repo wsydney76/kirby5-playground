@@ -1,0 +1,240 @@
+Title: Experiments: Custom Block Types
+
+----
+
+Bodycontent:
+
+[
+    {
+        "content": {
+            "blocktype": "tableOfContents"
+        },
+        "id": "902c4023-3834-427e-9a1e-de5e79066fa8",
+        "isHidden": false,
+        "type": "special"
+    },
+    {
+        "content": {
+            "text": "<p>Examples for custom block types, from Kirby videos and cookbook</p>"
+        },
+        "id": "f2fcdd13-97db-4215-bac7-345cbbcd68fd",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Accordion"
+        },
+        "id": "4d35df20-c1eb-4726-b18a-80e198cd117e",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>Simple accordion component from <a href=\"https://www.youtube.com/watch?v=XbFoF92ZoyY&amp;t=714s\" target=\"_blank\">Kirby's screencast.</a></p>"
+        },
+        "id": "eddd989b-b5d6-44e1-bfa0-c62a7390a332",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "items": [
+                {
+                    "summary": "Donec interdum metus et",
+                    "details": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nunc sed turpis. Pellentesque commodo eros a enim. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Nullam sagittis.\n\nVestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Sed aliquam ultrices mauris. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis."
+                },
+                {
+                    "summary": "Etiam feugiat lorem non metus",
+                    "details": "Phasellus ullamcorper ipsum rutrum nunc. Fusce ac felis sit amet ligula pharetra condimentum. Aliquam eu nunc. Vestibulum eu odio. Morbi nec metus.\n\nVestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Nullam vel sem. Suspendisse potenti. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Praesent blandit laoreet nibh."
+                },
+                {
+                    "summary": "Pellentesque libero tortor tincidunt et",
+                    "details": "Aenean imperdiet. Maecenas malesuada. Nam adipiscing. Fusce fermentum. Morbi mattis ullamcorper velit.\n\nDonec elit libero, sodales nec, volutpat a, suscipit non, turpis. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Fusce neque. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi."
+                }
+            ]
+        },
+        "id": "86abdfb6-a2fe-4627-befa-6872f53ae63b",
+        "isHidden": false,
+        "type": "accordion"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Infoboxes"
+        },
+        "id": "70199efc-4f97-4e8b-934e-37209e4d0b80",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>Custom block type with Vue powered preview. <a href=\"https://www.youtube.com/watch?v=hGhrJru-PQ8&amp;t=1262s\" target=\"_blank\">From Kirby's screencast.</a></p>"
+        },
+        "id": "5ec9b23b-5d10-4f56-8337-7676635928ff",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "infoboxtype": "info",
+            "text": "This is an info text."
+        },
+        "id": "319508b3-2e85-453d-a425-eaf5d4495fef",
+        "isHidden": false,
+        "type": "infobox"
+    },
+    {
+        "content": {
+            "infoboxtype": "success",
+            "text": "This is a success message. Everything went well."
+        },
+        "id": "9cbacf8a-ffef-4843-b5c8-440ee02c1722",
+        "isHidden": false,
+        "type": "infobox"
+    },
+    {
+        "content": {
+            "infoboxtype": "notice",
+            "text": "This is a notice. No idea what is different to info..."
+        },
+        "id": "afa1dc31-f5d1-4139-8e1e-798a688b7a6d",
+        "isHidden": false,
+        "type": "infobox"
+    },
+    {
+        "content": {
+            "infoboxtype": "alert",
+            "text": "This is an alert. Something went wrong."
+        },
+        "id": "e5ef181d-f3bb-4fe1-89e3-c235293d911d",
+        "isHidden": false,
+        "type": "infobox"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Links"
+        },
+        "id": "914559f7-67a1-4f29-abd9-a310bd1f57d6",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "links": [
+                {
+                    "link": "page://SOYSAlWl0xPRBa7n",
+                    "caption": "Read about me",
+                    "target": "false"
+                },
+                {
+                    "link": "https://example.com",
+                    "caption": "External Link",
+                    "target": "true"
+                },
+                {
+                    "link": "file://Fceh7paSu3K0wqAE",
+                    "caption": "A Picture",
+                    "target": "true"
+                },
+                {
+                    "link": "mailto:mail@example.com",
+                    "caption": "Email Me",
+                    "target": "false"
+                },
+                {
+                    "link": "tel:+123123123",
+                    "caption": "Call Me",
+                    "target": "false"
+                }
+            ]
+        },
+        "id": "429beee6-7109-4406-97c3-dd99362d40a9",
+        "isHidden": false,
+        "type": "links"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Testimonial"
+        },
+        "id": "a08f3c7a-352f-4b60-b981-f7e8aeccf7a9",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "quote": "Cras id dui. Praesent nec nisl a purus blandit viverra. Suspendisse non nisl sit amet velit hendrerit rutrum. In ac felis quis tortor malesuada pretium. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.",
+            "image": [
+                "file://lnsEL2OQlPaJe0Sc"
+            ],
+            "name": "Erna-Amalia Klawuppke",
+            "jobposition": "CEO and Founder",
+            "company": "Perlen vor die Säue Inc."
+        },
+        "id": "dad80d01-768a-4e28-b4b4-7753d9a62810",
+        "isHidden": false,
+        "type": "testimonial"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Audio"
+        },
+        "id": "84bcdbf6-8532-4a01-9628-223bf967ff8c",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>Custom block type with Vue powered preview. <a href=\"https://www.youtube.com/watch?v=hGhrJru-PQ8&amp;t=1262s\" target=\"_blank\">From Kirby's guide.</a></p>"
+        },
+        "id": "bd9b1a23-ff6b-4352-849e-5b26bd881308",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "poster": [
+                "file://e2pcWf6HVoRFX1PZ"
+            ],
+            "source": [
+                "file://419PSZgbGgoJTB2i"
+            ],
+            "title": "Malaika",
+            "subtitle": "By Lyambiko",
+            "description": "Malaika Nakupenda Malaika is a Swahili song written by Tanzanian artist, Adam Salim in 1945 and recorded for the first time by Kenyan musician, Fadhili William. This song is possibly the most famous of all Swahili love songs in Tanzania, Kenya and the entire East Africa, as well as being one of the most widely known of all Swahili songs in the world. Malaika in this context means \"angel\" in Swahili, and this word has always been used by the Swahili speakers to refer to a beautiful girl.",
+            "controls": "true",
+            "autoplay": "false"
+        },
+        "id": "1e15ac9e-1b95-4787-b058-d36ec3754fe3",
+        "isHidden": false,
+        "type": "audio"
+    }
+]
+
+----
+
+Featuredimage: - file://tpezFPdDWa0lCwyV
+
+----
+
+Subheading: Playing with Custom Block Types
+
+----
+
+Author: - user://3f6MDCar
+
+----
+
+Date: 2024-04-03 10:05:00
+
+----
+
+Topics: - page://vZl9MFOeAQhXo8PA
+
+----
+
+Uuid: a2RXo17yqvvfWEcx

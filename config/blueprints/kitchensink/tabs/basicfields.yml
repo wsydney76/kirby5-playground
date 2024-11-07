@@ -1,0 +1,261 @@
+label: Basic Fields
+columns:
+  - width: 1/2
+    fields:
+      textInputs:
+        label: Text Inputs
+        type: headline
+
+      textfield:
+        label: Text Field
+        type: text
+        help: A standard, single-line input field
+
+      slugField:
+        label: Slug Field
+        help: A text input that automatically sanitizes the typed value with our built-in sluggify method.
+        type: slug
+        width: 1/2
+        wizard:
+          field: textfield
+          text: Sync with Text Field!
+
+      slugField2:
+        label: Slug Field (Auto Sync)
+        type: slug
+        width: 1/2
+        sync: textfield
+
+      textareafield:
+        label: Text Area Field
+        type: textarea
+        help: A textarea field, which auto-resizes and has built-in format buttons.
+
+      writerfield:
+        label: Writer Field
+        type: writer
+        help: A simple WYSIWYG editor field for inline content with formats like bold, italic, etc.
+
+      writerfield2:
+        label: Writer Field
+        type: writer
+        help: A simple WYSIWYG editor field for inline content with limited formatting options.
+        nodes: false
+        marks:
+          - bold
+          - italic
+
+      writerfield3:
+        label: Writer Field
+        type: writer
+        help: A simple WYSIWYG editor field for inline content with toolbar.
+        toolbar:
+          inline: false
+
+      listfield:
+        label: List Field
+        type: list
+        help: A simple WYSIWYG editor field for ordered and unordered lists
+
+      links:
+        label: Links
+        type: headline
+
+      linkhelp:
+        label: Link Help
+        type: info
+        theme: none
+        text: Try different link types below
+
+      link:
+        type: link
+
+      link2:
+        type: link
+
+      link3:
+        type: link
+
+  - width: 1/2
+    fields:
+      numberinputs:
+        label: Numbers
+        type: headline
+
+      int:
+        label: Integer 0-10
+        type: number
+        before: "Amount:"
+        min: 0
+        max: 10
+        width: 1/3
+
+      gap:
+        type: gap
+        width: 1/3
+
+      price:
+        label: Price
+        type: number
+        step: .01
+        width: 1/3
+        after: €
+
+      dateinputs:
+        label: Date and Time
+        type: headline
+
+      datefield:
+        label: Date
+        type: date
+        width: 1/3
+        step: month
+
+      timefield:
+        label: Time
+        width: 1/3
+        type: time
+
+      datetimefield:
+        label: Date and time
+        type: date
+        width: 2/3
+        time:
+          step: 1 # 1 minute steps
+
+      contactinputs:
+        label: Contact Inputs
+        type: headline
+
+      emailfield:
+        label: Email Field
+        width: 1/3
+        type: email
+
+      telfield:
+        label: Telephone Field
+        width: 1/3
+        type: tel
+
+      urlfield:
+        label: URL Field
+        width: 1/3
+        type: url
+
+      selects:
+        label: Selects
+        type: headline
+
+      toggleField:
+        label: Toggle Field
+        type: toggle
+        width: 1/3
+        text:
+          - "Nope"
+          - "Yay!"
+          -
+      checkboxesField:
+        extends: kitchensink/fields/options
+        label: Checkboxes Field
+        type: checkboxes
+        width: 1/3
+
+      radioField:
+        extends: kitchensink/fields/options
+        label: Radio Field
+        type: radio
+        width: 1/3
+
+      selectField:
+        extends: kitchensink/fields/options
+        label: Select Field
+        type: select
+        width: 1/3
+
+      multiselectField:
+        extends: kitchensink/fields/options
+        label: Multi Select Field
+        type: multiselect
+        width: 2/3
+
+      togglesField2:
+        type: toggles
+        label: Toggles Field
+        labels: false
+        width: 1/3
+        options:
+          - value: left
+            icon: text-left
+          - value: center
+            icon: text-center
+          - value: right
+            icon: text-right
+          - value: justify
+            icon: text-justify
+
+      togglesField:
+        type: toggles
+        label: Toggles Field
+        width: 2/3
+        options:
+          - value: left
+            text: Left
+            icon: text-left
+          - value: center
+            text: Center
+            icon: text-center
+          - value: right
+            text: Right
+            icon: text-right
+          - value: justify
+            text: Justify
+            icon: text-justify
+
+      rangeField:
+        label: Range Field
+        type: range
+        min: 0
+        max: 250
+        before: Price
+        after: €
+
+      colors:
+        label: Colors
+        type: headline
+
+      color1:
+        label: Color (Picker)
+        type: color
+        width: 1/2
+        options:
+          "Sunny rays": "#F8B195"
+          "First-love blush": "#F67280"
+          "Cherry blossom": "#C06C84"
+          "Morning gloom": "#6C5B7B"
+          "Midnight rain": "#355C7D"
+
+
+      color3:
+        label: Color (Input only)
+        type: color
+        mode: input
+        width: 1/2
+        options:
+          "Sunny rays": "#F8B195"
+          "First-love blush": "#F67280"
+          "Cherry blossom": "#C06C84"
+          "Morning gloom": "#6C5B7B"
+          "Midnight rain": "#355C7D"
+
+      color2:
+        label: Color (Options)
+        type: color
+        mode: options
+        options:
+          "Sunny rays": "#F8B195"
+          "First-love blush": "#F67280"
+          "Cherry blossom": "#C06C84"
+          "Morning gloom": "#6C5B7B"
+          "Midnight rain": "#355C7D"
+
+

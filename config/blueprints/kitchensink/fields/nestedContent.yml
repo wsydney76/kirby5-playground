@@ -1,0 +1,115 @@
+label: Nested Blocks with Preview
+type: blocks
+fieldsets:
+  - text
+  - heading
+  contentHeader:
+    name: Content Header
+    icon: bolt
+    preview: fields # required
+    wysiwyg: true # recommended
+    fields:
+      title:
+        type: text
+      logo:
+        type: files
+        layout: cards
+        size: small
+        image:
+          cover: true
+  contentNested:
+    name: Nested Content
+    icon: circle-nested
+    preview: fields # required
+    wysiwyg: true # recommended
+    tabs:
+      main:
+        label: Content
+        fields:
+          contentBlocks:
+            label: Nested Blocks
+            type: blocks
+            fieldsets:
+              - text
+              - heading
+              textImage:
+                name: Image and Content Columns
+                icon: text
+                preview: fields # required
+                wysiwyg: true # recommended
+                tabs:
+                  main:
+                    label: Content
+                    icon: bolt
+                    fields:
+                      imageColumn:
+                        label: Image Column
+                        type: object
+                        width: 1/3
+                        fields:
+                          image:
+                            extends: kitchensink/fields/images
+                            label: image
+                            layout: cards
+                            size: tiny
+                            multiple: false
+                          caption:
+                            type: text
+                      contentColumn:
+                        label: Content Column
+                        type: blocks
+                        width: 2/3
+                  settings:
+                    label: Settings
+                    fields:
+                      togglesField:
+                        type: toggles
+                        label: Toggles Field
+                        width: 1/4
+                        options:
+                          - value: left
+                            text: Image Left
+                            icon: text-left
+                          - value: right
+                            text: Image Right
+                            icon: text-right
+              dishes:
+                name: Simple 3-column menu table
+                icon: menu
+                preview: fields # required
+                wysiwyg: true # recommended
+                fields:
+                  rows:
+                    label: Dishes
+                    type: structure
+                    columns:
+                      dish:
+                        width: 1/4
+                      description:
+                        width: 1/4
+                      price:
+                        width: 1/2
+                        align: right
+                        after: "USD"
+                    fields:
+                      dish:
+                        type: writer
+                        marks: false
+                        inline: true
+                      description:
+                        type: text
+                      price:
+                        type: number
+      settings:
+        label: Settings
+        fields:
+          bgcolor:
+            label: Background Color
+            width: 1/4
+            type: color
+            mode: options
+            options:
+              "Red": "#fecaca"
+              "Green": "#bbf7d0"
+              "Sky": "#bae6fd"
+              "Indigo": "#c7d2fe"

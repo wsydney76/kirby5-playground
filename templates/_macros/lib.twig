@@ -1,0 +1,55 @@
+{#
+Show an image.
+This can get really complex in a real world application,
+especially when using a third party plugin like imager-x
+with a lot of options, or when delivering different formats.
+
+However, images should always be output via a macro and not by using 'image.img()'
+
+#}
+
+
+{% macro img(image, params = {}) %}
+
+    {% set params = {
+        mode: 'crop',
+        srcset: null,
+        attr: {},
+        
+    } | merge(params) %}
+
+    {% set attr = {
+        loading: 'lazy',
+        class: null,
+        srcset: params.srcset ? image.srcset(params.srcset) : null,
+    }|merge(params.attr) %}
+
+    {% if params.mode == 'crop' and params.transform.height is defined %}
+        {% set transformedImage = image.crop(params.transform.width, params.transform.height) %}
+    {% elseif params.transform.width is defined %}
+        {% set transformedImage = image.resize(params.transform.width) %}
+    {% else %}
+        {% set transformedImage = image %}
+    {% endif %}
+
+
+    <img src="{{ transformedImage.url }}"
+         alt="{{ image.alt|e('html_attr') }}"
+         width="{{ transformedImage.width }}"
+         height="{{ transformedImage.height }}"
+        {{ attr(attr) }}>
+
+{% endmacro %}
+
+{#
+Show copyright info in the bottom right corner of an image.
+This must be called within a figure tag with position: relative
+#}
+{% macro copyrightOverlay(copyright) %}
+    {% if copyright.isNotEmpty %}
+        <figcaption class="absolute bottom-0 right-0 px-2 py-1 bg-black/50 text-white text-sm">
+            {{ 'Photo'|t }}: {{ copyright }}
+        </figcaption>
+    {% endif %}
+{% endmacro %}
+

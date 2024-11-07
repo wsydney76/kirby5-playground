@@ -1,0 +1,8 @@
+name:
+  en: Accordion
+  de: Akkordeon
+icon: credit-card
+preview: fields
+wysiwyg: true
+fields:
+  items: fields/accordionItems

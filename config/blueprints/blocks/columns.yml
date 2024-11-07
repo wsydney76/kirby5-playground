@@ -1,0 +1,85 @@
+name:
+  en: Columns
+  de: Spalten
+icon: grid
+wysiwyg: true
+preview: fields
+fields:
+  width:
+    type: select
+    label:
+      en: Width
+      de: Breite
+    help:
+      en: 'The width of the layout content.'
+      de: 'Die Breite des Inhalts des Layouts.'
+    default: default
+    required: true
+    options:
+      - value: default
+        text:
+          en: Default
+          de: Standard
+
+      - value: slim
+        text:
+          en: Slim
+          de: Schmal
+
+      - value: wide
+        text:
+          en: Wider
+          de: Breiter
+
+      - value: max
+        text:
+          en: Full content width (like post image)
+          de: Volle Inhaltsbreite (wie Beitragsbild)
+
+      - value: full
+        text:
+          en: Full Width
+          de: Volle Breite
+    width: 1/3
+  bgcolor:
+    type: color
+    label:
+      en: Background Color
+      de: Hintergrundfarbe
+    help:
+      en: Leave empty for no background color.
+      de: 'Die Hintergrundfarbe der Spalte.'
+    options:
+      "#e2e8f0": "Slate"
+      "#bfdbfe": "Blue"
+      "#bae6fd": "Sky"
+      "#bbf7d0": "Green"
+      "#fecaca": "Red"
+      "#fed7aa": "Orange"
+    width: 1/3
+  bgcolorwidth:
+    type: select
+    label:
+      en: Background Color Width
+      de: Hintergrundfarbe Breite
+    help:
+        en: Whether the background color should be full width or just the content width.
+        de: 'Die Breite der Hintergrundfarbe.'
+    default: default
+    required: true
+    options:
+      - value: default
+        text:
+          en: Content width
+          de: Inhaltsbreite
+
+      - value: full
+        text:
+          en: Full Width
+          de: Volle Breite
+    width: 1/3
+  layout:
+    extends: fields/layout
+    label: ' '
+    settings: false
+

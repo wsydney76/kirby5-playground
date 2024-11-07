@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "kirbyup src/index.js --watch",
+    "build": "kirbyup src/index.js",
+    "serve": "kirbyup serve src/index.js"
+  }
+}

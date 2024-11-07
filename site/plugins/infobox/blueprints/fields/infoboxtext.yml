@@ -1,0 +1,15 @@
+type: writer
+label:
+  en: Text
+  de: Text
+required: true
+inline: true
+marks:
+  - bold
+  - italic
+  - clear
+  - '|'
+  - link
+placeholder:
+  en: Enter your info text here...
+  de: Geben Sie hier Ihren Infotext ein...

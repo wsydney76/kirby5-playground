@@ -1,0 +1,8 @@
+label: Customized Blocks
+fields:
+  gap2:
+    type: gap
+    width: 1/6
+  blocksField2:
+    extends: fields/customBlocks
+    width: 2/3

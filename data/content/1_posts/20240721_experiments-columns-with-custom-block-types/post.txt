@@ -1,0 +1,124 @@
+Title: Experiments: Columns with Custom Block Types
+
+----
+
+Bodycontent:
+
+[
+    {
+        "content": {
+            "text": "<p>Examples for custom block typs in a columns layout</p>"
+        },
+        "id": "b0957686-f936-4cc8-a88d-1d8a1cba08e3",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Default Columns with Default Block Types"
+        },
+        "id": "eb052f7c-3256-4c4d-bbe2-6eb885be50fb",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>The same width as 'regular' blocks, no special styling.</p>"
+        },
+        "id": "0f90efc8-a277-4e12-8421-4f13d5241ab2",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "width": "default",
+            "bgcolor": "",
+            "bgcolorwidth": "default",
+            "layout": "[{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"level\":\"h3\",\"text\":\"The Column on the Left\"},\"id\":\"3175a4b9-4c47-424f-b732-6c657148fed8\",\"isHidden\":false,\"type\":\"heading\"},{\"content\":{\"text\":\"<p>Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Quisque malesuada placerat nisl. Donec vitae orci sed dolor rutrum auctor.</p><p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Cras ultricies mi eu turpis hendrerit fringilla.</p>\"},\"id\":\"450a86c9-72a7-490d-8fd3-58bbf8063acd\",\"isHidden\":false,\"type\":\"text\"},{\"content\":{\"text\":\"Fusce pharetra convallis urna. Pellentesque posuere. Vestibulum ante ipsum primis in faucibus orci luctus.\",\"citation\":\"Vivamus in erat\"},\"id\":\"726f49b3-32d5-40e6-aadd-eaf494a7e3a4\",\"isHidden\":false,\"type\":\"layoutQuote\"}],\"id\":\"de8386c9-1205-439b-b70d-ae33db7358c9\",\"width\":\"1/2\"},{\"blocks\":[{\"content\":{\"level\":\"h3\",\"text\":\"The Column on the Right\"},\"id\":\"88530e65-76c4-41c4-ae4f-264a8d1bc678\",\"isHidden\":false,\"type\":\"heading\"},{\"content\":{\"text\":\"<p>Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Quisque malesuada placerat nisl. Donec vitae orci sed dolor rutrum auctor.</p><p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Cras ultricies mi eu turpis hendrerit fringilla.</p>\"},\"id\":\"b9068543-74d8-47d2-8ecd-ec50e86b4b68\",\"isHidden\":false,\"type\":\"text\"},{\"content\":{\"text\":\"Praesent venenatis metus at tortor pulvinar varius. Nulla sit amet est.\",\"citation\":\"Fusce fermentum odio\"},\"id\":\"8cf0a923-bf33-4321-885d-6474f1aa748e\",\"isHidden\":false,\"type\":\"layoutQuote\"}],\"id\":\"a5c64179-86ad-4201-934f-664a56030af6\",\"width\":\"1/2\"}],\"id\":\"0c52403f-cf90-4098-aca9-63d7676c9946\"}]"
+        },
+        "id": "7f8687b4-654d-49e7-aaca-5893848d5920",
+        "isHidden": false,
+        "type": "columns"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Wide Columns with Background Color and Custom Block Types"
+        },
+        "id": "7d8c00f5-039c-4393-a5ae-ce9b4a2f2cfc",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>Use different width and background color</p>"
+        },
+        "id": "508916fc-f88a-4a79-bf64-f315ad95e132",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "width": "max",
+            "bgcolor": "#bae6fd",
+            "bgcolorwidth": "full",
+            "layout": "[{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"level\":\"h2\",\"text\":\"CTA Block Type\"},\"id\":\"3ef6373a-648c-4e3f-8ec9-60730cd27100\",\"isHidden\":false,\"type\":\"heading\"},{\"content\":{\"text\":\"<p>This could mostly be achieved by composing content with built-in block types, but it is a better AX if often used combinations are covered by a custom block type.</p>\"},\"id\":\"360b30f7-09b2-488f-bf44-08fa5eb5832b\",\"isHidden\":false,\"type\":\"text\"}],\"id\":\"a6e657a3-34e9-4bfb-915f-a0599e15d548\",\"width\":\"1/1\"}],\"id\":\"f5a4d35e-747b-4e23-9d9d-9095fca4e044\"},{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"heading\":\"My Service\",\"image\":[\"file://iCI4RAG8VWiE0jMi\"],\"body\":\"<p>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Fusce neque. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. In ut quam vitae odio lacinia tincidunt. Praesent egestas tristique nibh.</p>\",\"target\":[\"page://SOYSAlWl0xPRBa7n\"],\"caption\":\"Buy\"},\"id\":\"95eb2217-f47c-47ad-985c-a50642e86728\",\"isHidden\":false,\"type\":\"cta\"}],\"id\":\"c6c64107-bf1a-40bd-963c-14db7d6c8619\",\"width\":\"1/2\"},{\"blocks\":[{\"content\":{\"heading\":\"My Other Service\",\"image\":[\"file://UToV5NiZlzOCzDk7\"],\"body\":\"<p>Cras sagittis. Nullam vel sem. Suspendisse non nisl sit amet velit hendrerit rutrum. Duis lobortis massa imperdiet quam. Ut varius tincidunt libero.</p><p>Phasellus ullamcorper ipsum rutrum nunc. Vestibulum facilisis.</p>\",\"target\":[\"page://SOYSAlWl0xPRBa7n\"],\"caption\":\"Read More\"},\"id\":\"9d15442b-6066-4866-85d4-8fc32ee8fa02\",\"isHidden\":false,\"type\":\"cta\"}],\"id\":\"0c4aeb32-0efc-4f56-a91e-bfecec069f04\",\"width\":\"1/2\"}],\"id\":\"6a041f82-d606-41ad-82ab-71e292c4ee7c\"},{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"level\":\"h2\",\"text\":\"Cards Block Type\"},\"id\":\"bd7cf451-dc31-4177-8406-45fbd59ff669\",\"isHidden\":false,\"type\":\"heading\"},{\"content\":{\"text\":\"<p>From Kirby's learning material.</p>\"},\"id\":\"f71e3970-703f-4656-8dff-413dc3ff38f6\",\"isHidden\":false,\"type\":\"text\"}],\"id\":\"bd41cae4-4cf4-4af9-8300-d35b78a64a3f\",\"width\":\"1/1\"}],\"id\":\"699bc7ef-6341-432f-94e4-fa1b0c5a7dc8\"},{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"cardtype\":\"page\",\"page\":[\"page://vLu7ovVYKlpd8tfY\"],\"link\":\"\",\"image\":[],\"heading\":\"\",\"subheading\":\"\"},\"id\":\"b4fb105f-3a5c-42f3-b26b-50c4f03131e2\",\"isHidden\":false,\"type\":\"card\"}],\"id\":\"a2a1006f-7f19-448e-a220-96d7e23e1b2e\",\"width\":\"1/4\"},{\"blocks\":[{\"content\":{\"cardtype\":\"page\",\"page\":[\"page://YxpYkHrWgINJI6ue\"],\"link\":\"\",\"image\":[],\"heading\":\"\",\"subheading\":\"\"},\"id\":\"f4b45cd7-dc86-40a3-8c51-5e5d4c776a45\",\"isHidden\":false,\"type\":\"card\"}],\"id\":\"61204f1d-cb9a-44e7-bdc3-9f784899ca7f\",\"width\":\"1/4\"},{\"blocks\":[{\"content\":{\"cardtype\":\"manual\",\"page\":[],\"link\":\"https://example.com\",\"image\":[\"file://YS6WaKUsI8YkRvmF\"],\"heading\":\"This is a Manually Created Card\",\"subheading\":\"Nullam cursus lacinia erat. Aliquam eu nunc. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.\"},\"id\":\"edf0c821-6c3f-4f12-9e13-e7f963634d03\",\"isHidden\":false,\"type\":\"card\"}],\"id\":\"a60f36e1-0239-46ec-a5b5-cbab2297a59f\",\"width\":\"1/4\"},{\"blocks\":[{\"content\":{\"cardtype\":\"page\",\"page\":[\"page://qAZnwh7gtbmamigE\"],\"link\":\"\",\"image\":[],\"heading\":\"\",\"subheading\":\"\"},\"id\":\"044293af-48dd-49d5-84fb-1e8754066daa\",\"isHidden\":false,\"type\":\"card\"}],\"id\":\"2dc72c2c-c967-4a85-9581-2aa71467b6e6\",\"width\":\"1/4\"}],\"id\":\"833c0b27-308d-4449-beb5-e9745ed5050b\"},{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"level\":\"h2\",\"text\":\"Nested Content\"},\"id\":\"2fbab737-3e1d-4d9f-a1e8-2538779bdf69\",\"isHidden\":false,\"type\":\"heading\"}],\"id\":\"5d182d2c-de53-4237-aa80-68d61d9346b0\",\"width\":\"1/1\"}],\"id\":\"52cd4581-c2af-4cab-ac54-138b95321054\"},{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"image\":[\"file://UToV5NiZlzOCzDk7\"]},\"id\":\"fc4ce2bf-8fdf-41f0-9b79-c3692fc70a8d\",\"isHidden\":false,\"type\":\"coverImage\"}],\"id\":\"0406f08f-15c5-4add-9471-f92f2bc124b8\",\"width\":\"1/3\"},{\"blocks\":[{\"content\":{\"addresses\":[{\"label\":\"Office\",\"country\":\"Germany\",\"addressline1\":\"Hauptstraße 15\",\"addressline2\":\"\",\"zip\":\"98765\",\"city\":\"Berlin\",\"contact\":{\"photo\":[\"file://zms738X1QFSbLhjD\"],\"name\":\"Michael Foster\",\"email\":\"michael@example.com\",\"phone\":\"+49 987 12345\"}},{\"label\":\"Flagship Store\",\"country\":\"Austria\",\"addressline1\":\"Am Ring 12\",\"addressline2\":\"\",\"zip\":\"12345\",\"city\":\"Vienna\",\"contact\":{\"photo\":[\"file://XmjSopBcpIOzTRuV\"],\"name\":\"Alicia Bell\",\"email\":\"alicia@examples.com\",\"phone\":\"+49 123 98765\"}}]},\"id\":\"bbc9df6e-0726-4e66-aef0-c56c27be463f\",\"isHidden\":false,\"type\":\"addresses\"}],\"id\":\"f5dda28f-40ba-4d61-8bf3-eb98692025b9\",\"width\":\"2/3\"}],\"id\":\"642d8918-9f24-4624-b119-1b1bc1240acd\"}]"
+        },
+        "id": "39e8bbf2-2ccd-4a9a-9914-3de7eb8e7a04",
+        "isHidden": false,
+        "type": "columns"
+    },
+    {
+        "content": {
+            "level": "h2",
+            "text": "Back to Single Column Content"
+        },
+        "id": "80aa8d03-0c31-4713-83cc-9d845d4f451b",
+        "isHidden": false,
+        "type": "heading"
+    },
+    {
+        "content": {
+            "text": "<p>Proin magna. Phasellus nec sem in justo pellentesque facilisis. Fusce commodo aliquam arcu. Suspendisse potenti. Praesent venenatis metus at tortor pulvinar varius.</p><p>Donec sodales sagittis magna. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Donec sodales sagittis magna. Praesent ac sem eget est egestas volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>"
+        },
+        "id": "d2b3f6ca-f882-4416-8eec-bf50217c3d1f",
+        "isHidden": false,
+        "type": "text"
+    },
+    {
+        "content": {
+            "width": "slim",
+            "bgcolor": "",
+            "bgcolorwidth": "default",
+            "layout": "[{\"attrs\":[],\"columns\":[{\"blocks\":[{\"content\":{\"level\":\"h2\",\"text\":\"A Single Small Column\"},\"id\":\"69da23d9-b06a-4a67-a030-b10eb53cfc1a\",\"isHidden\":false,\"type\":\"heading\"},{\"content\":{\"image\":[\"file://iCI4RAG8VWiE0jMi\"],\"caption\":\"\"},\"id\":\"66e24932-60a6-4502-bf94-414b504f5c9b\",\"isHidden\":false,\"type\":\"layoutImage\"},{\"content\":{\"text\":\"<p>Using the layout field for a single column with a narrower width.</p>\"},\"id\":\"d407be3d-6b0b-40d6-8a74-f43efed07b59\",\"isHidden\":false,\"type\":\"text\"},{\"content\":{\"text\":\"Columns are awesome!\",\"citation\":\"Any Author\"},\"id\":\"d5cfb484-c6d6-4249-9787-a89d061284bd\",\"isHidden\":false,\"type\":\"layoutQuote\"}],\"id\":\"73cc3050-c160-4451-a73e-43358397b804\",\"width\":\"1/1\"}],\"id\":\"2536ecb1-ae8d-4a87-8e7f-ecb5838fb92a\"}]"
+        },
+        "id": "dd9dc8e8-4389-425c-959c-0ddf31df2791",
+        "isHidden": false,
+        "type": "columns"
+    }
+]
+
+----
+
+Featuredimage: - file://cXlkP0cTQD2jj6S8
+
+----
+
+Subheading: 
+
+----
+
+Author: - user://3f6MDCar
+
+----
+
+Date: 2024-07-21 10:05:00
+
+----
+
+Topics: - page://vZl9MFOeAQhXo8PA
+
+----
+
+Uuid: WakhqbvpNovjrBbx

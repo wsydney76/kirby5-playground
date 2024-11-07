@@ -1,0 +1,26 @@
+<div class="space-y-4">
+    {% set addresses = page.addresses.toStructure %}
+
+    {% for address in addresses %}
+        <div>
+            <div>
+                {{ address.street }}
+            </div>
+            <div>
+                {{ address.zip }} {{ address.city }}
+            </div>
+            <div>
+                {{ address.description }}
+            </div>
+            <div>
+                {% set contact = address.contact.toObject %}
+
+                {% if contact.name.toString %}
+                    {{ contact.name }}
+                    {{ tel(contact.phone) }}
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

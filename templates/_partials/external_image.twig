@@ -1,0 +1,15 @@
+{# @param src string image url #}
+{# @param alt string image alt text #}
+{# @param ratio string desired aspect ratio, either 'auto' or slash separated width/height like '16/9' #}
+
+{% if ratio == 'auto' %}
+    <img src="{{ src }}" alt="{{ alt }}">
+{% else %}
+    {% set ratio = ratio|split('/') %}
+    {% set factor = ratio[1] / ratio[0] * 100 %}
+    <div class="not-prose w-full h-0 relative overflow-hidden" style="padding-bottom: {{ factor }}%;">
+        <img class="absolute top-0 left-0 w-full h-full object-cover"
+             src="{{ src }}"
+             alt="{{ alt }}">
+    </div>
+{% endif %}

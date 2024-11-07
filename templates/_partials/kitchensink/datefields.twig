@@ -1,0 +1,11 @@
+<div class="space-y-4">
+    <div>
+        {{ page.datefield.toDate('d.m.Y') }} {{ page.datefield.toDate('Y-m-d') }}
+    </div>
+    <div>
+        {{ page.timefield.toDate('H:i') }}
+    </div>
+    <div>
+        {{ page.datetimefield.toDate('Y-m-d H:i') }}
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{% from '_macros/lib.twig' import img %}
+
+{# Just one srcset variation for small screens #}
+
+{% if image %}
+    {# TODO: FULLWIDTH #}
+    {% set width = wide ? customConfig.blockImageWidth.wide : customConfig.blockImageWidth.default %}
+    {% set smallWidth = customConfig.blockImageWidth.small %}
+    {% if ratio == 'auto' %}
+        {% set transform = {width: width, crop: crop} %}
+        {% set smallTransform = {width: smallWidth, crop: crop} %}
+    {% else %}
+        {% set ratio = ratio|split('/') %}
+        {% set height = width / ratio[0]|int * ratio[1]|int %}
+        {% set transform = {width: width, height: height|round, crop: crop} %}
+        {% set smallHeight = smallWidth / ratio[0]|int * ratio[1]|int %}
+        {% set smallTransform = {width: smallWidth, height: smallHeight|round, crop: crop} %}
+    {% endif %}
+
+    {% set srcset = {
+        ("#{width}w"): transform,
+        ("#{smallWidth}w"): smallTransform,
+    } %}
+
+    {{ img(image, {
+        transform: transform,
+        srcset: srcset
+    }) }}
+{% endif %}

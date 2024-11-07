@@ -1,0 +1,75 @@
+{% set field = page.blueprint.field('checkboxesField') %}
+
+<div class="space-y-4">
+    <div>
+        {{ page.toggleField.toBool ? 'Toggle: On' : 'Toggle: Off' }}
+    </div>
+
+    <div>
+        <p class="font-bold">Checkboxes</p>
+        {% for option in  page.checkboxesField|split(',') %}
+            {{ _self.showOption(field, option) }}<br>
+        {% endfor %}
+    </div>
+
+    <div>
+        <p class="font-bold">Radio</p>
+        {{ _self.showOption(field, page.radioField) }}<br>
+    </div>
+
+    <div>
+        <p class="font-bold">Select</p>
+        {{ _self.showOption(field, page.selectField) }}<br>
+    </div>
+
+    <div>
+        <p class="font-bold">Multi Select</p>
+        {% for option in  page.multiselectField|split(',') %}
+            {{ _self.showOption(field, option) }}<br>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% set field = page.blueprint.field('togglesField2') %}
+        <p class="font-bold">Toggles</p>
+        {{ _self.showToggleOption(field, page.togglesField2) }}
+    </div>
+
+    <div>
+        {% set field = page.blueprint.field('togglesField') %}
+        
+        <p class="font-bold">Toggles with text</p>
+        {{ _self.showToggleOption(field, page.togglesField) }}
+        <br>
+    </div>
+    
+    <div>
+        <p class="font-bold">Range Field</p>
+        {{ page.rangeField.toInt }}
+    </div>
+
+    <div>
+        <p class="font-bold">Tags</p>
+        {% for option in  page.tags|split(',') %}
+            {{ option }}<br>
+        {% endfor %}
+    </div>
+
+
+</div>
+
+{% macro showOption(field, option) %}
+    {{ option }} = {{ field.options[option|trim] ?? 'No Text'  }}
+{% endmacro %}
+
+{% macro showToggleOption(field, option) %}
+    {{ option }}
+    
+    {% for o in field.options %}
+    	{% if o.text is defined and o.value == option %}
+            = {{ o.text }}
+    	{% endif %}
+    {% endfor %}
+    
+{% endmacro %}
+

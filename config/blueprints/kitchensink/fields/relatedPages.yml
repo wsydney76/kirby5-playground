@@ -1,0 +1,7 @@
+label: Related Pages
+type: pages
+layout: list
+image:
+  query: page.featuredImage.toFile
+  cover: true
+

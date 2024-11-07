@@ -1,0 +1,29 @@
+{
+  "name": "kirby4-playground",
+  "version": "2.0.0",
+  "description": "Kirby 4 Playground",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./resources/css/tailwind.css -o ./web/assets/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./resources/css/tailwind.css -o ./web/assets/css/styles.css --minify",
+    "audioup-dev": "kirbyup site/plugins/audio-block/src/index.js --out-dir site/plugins/audio-block --watch",
+    "audioup-serve": "kirbyup serve site/plugins/audio-block/src/index.js --out-dir site/plugins/audio-block",
+    "audioup-build": "kirbyup site/plugins/audio-block/src/index.js --out-dir site/plugins/audio-block"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsydney76/kirby4-playground.git"
+  },
+  "keywords": [],
+  "author": "wsydney76",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsydney76/kirby4-playground/issues"
+  },
+  "homepage": "https://github.com/wsydney76/kirby4-playground#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "kirbyup": "^3.1.12",
+    "tailwindcss": "^3.4.1"
+  }
+}

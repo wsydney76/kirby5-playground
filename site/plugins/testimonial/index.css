@@ -1,0 +1,44 @@
+
+.k-block-type-testimonial {
+  border-left: 4px solid rgb(71, 85, 105);
+  padding-left: .75rem;
+  color: rgb(71, 85, 105);
+}
+
+.k-block-type-testimonial img {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  margin-right: 1rem;
+  border-radius: 9999px;
+}
+
+.k-block-type-testimonial-quote {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.k-block-type-testimonial-quote footer {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.k-block-type-testimonial-quote figcaption {
+  width: 100%;
+}
+
+.k-block-type-testimonial-voice {
+  display: flex;
+  align-items: center;
+}
+
+.k-block-type-testimonial-voice img {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.k-block-type-testimonial-voice input {
+  border: none;
+}
