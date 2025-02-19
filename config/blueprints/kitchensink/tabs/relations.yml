@@ -12,12 +12,14 @@ columns:
         extends: kitchensink/fields/relatedPages
         label: Related Pages (Cardlets)
         layout: cardlets
+        info: '{{ page.subheading }}'
 
       related3:
         extends: kitchensink/fields/relatedPages
         label: Related Pages (Cards)
         layout: cards
         size: medium
+        info: '<br>{{ page.subheading }}'
         image:
           ratio: 3/2
 

@@ -5,6 +5,7 @@ fields:
     label: 1/1 format
     layout: cards
     size: large
+    info: '<br>{{ page.subheading }}'
     image:
       ratio: 1/1
   ratiohigh:
@@ -12,12 +13,14 @@ fields:
     label: 3/4 format
     layout: cards
     size: large
+    info: '<br>{{ page.subheading }}'
     image:
       ratio: 3/4
   ratiolandscape:
     extends: kitchensink/fields/relatedPages
-    label: 21/9 format
+    label: 16/9 format
     layout: cards
     size: large
+    info: '<br>{{ page.subheading }}'
     image:
-      ratio: 21/9
+      ratio: 16/9
