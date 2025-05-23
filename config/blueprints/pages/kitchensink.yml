@@ -29,6 +29,8 @@ tabs:
 
   basicfields: kitchensink/tabs/basicfields
 
+  grouping: kitchensink/tabs/grouping
+
   visuals: kitchensink/tabs/visuals
 
   relations: kitchensink/tabs/relations

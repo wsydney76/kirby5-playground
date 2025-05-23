@@ -253,6 +253,7 @@ photo:
 name: Jane Doe
 email: main@example.com
 phone: +49 123 45678
+text: ""
 
 ----
 
@@ -366,6 +367,55 @@ Blocksfield:
         "type": "quote"
     }
 ]
+
+----
+
+Entriestext:
+
+- Text Line One
+- Text Line Two
+- Text Line Three
+
+----
+
+Entriescolor:
+
+- '#6c5b7b'
+- '#c06c84'
+
+----
+
+Entriesdates:
+
+- 2025-05-08
+- 2025-05-16
+
+----
+
+Entries:
+
+- photography
+- architecture
+
+----
+
+Featuredimage: - file://6KjGJmFXalvbSbDq
+
+----
+
+Subheading: My Subheading
+
+----
+
+Author: - user://3f6MDCar
+
+----
+
+Date: 2025-05-27 09:55:00
+
+----
+
+Topics: - page://vZl9MFOeAQhXo8PA
 
 ----
 
@@ -539,8 +589,23 @@ Layoutfield:
 
 ----
 
+Name: Erna Klawuppke
+
+----
+
+Email: erna@klawuppke.com
+
+----
+
 Uuid: udwGUvS6QD7EjIE9
 
 ----
 
 Headline: 
+
+----
+
+Entries1:
+
+- design
+- photography

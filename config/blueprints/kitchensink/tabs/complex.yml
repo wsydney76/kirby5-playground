@@ -15,6 +15,15 @@ columns:
             type: email
           phone:
             type: tel
+          text:
+            type: textarea
+          test:
+            type: group
+            fields:
+              name:
+                  type: text
+              email:
+                  type: email
 
   - width: 1/2
     fields:
