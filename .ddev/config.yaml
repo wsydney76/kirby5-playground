@@ -1,4 +1,4 @@
-name: kirby1
+name: kirby5-playground
 type: php
 docroot: web
 php_version: "8.3"

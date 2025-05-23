@@ -1,4 +1,4 @@
-# Kirby 4 - Playground
+# Kirby 5 - Playground
 
 Extended version of the Kirby 4 Tutorial.
 
@@ -11,7 +11,7 @@ Extended version of the Kirby 4 Tutorial.
 * More example pages.
 * Added Kitchen Sink page type that demonstrates usage of all (?) built-in field types.
 * Added Kirby CLI and kirbyup packages.
-* Updated to Kirby 4.4
+* Updated to Kirby 5.0
 * Dropped multi-language support for now, some translations are still there, but not used.
 
 Thanks to the girls!
