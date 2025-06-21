@@ -17,7 +17,7 @@
 
             </div>
             <div @dblclick.stop>
-                <k-writer
+                <k-writer-input
                     :inline="true"
                     :marks="false"
                     :placeholder="field('title').placeholder"
@@ -25,7 +25,7 @@
                     class="k-block-type-audio-title"
                     @input="update({ title: $event })"
                 />
-                <k-writer
+                <k-writer-input
                     :inline="true"
                     :marks="false"
                     :placeholder="field('subtitle').placeholder"
@@ -33,7 +33,7 @@
                     class="k-block-type-audio-subtitle"
                     @input="update({ subtitle: $event })"
                 />
-                <k-writer
+                <k-writer-input
                     :inline="true"
                     :marks="false"
                     :placeholder="field('description').placeholder"

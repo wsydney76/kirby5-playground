@@ -18,6 +18,7 @@ tabs:
         multiple: false
         width: 1/2
       title:
+        label: Title
         type: text
         placeholder: Title
       subtitle:

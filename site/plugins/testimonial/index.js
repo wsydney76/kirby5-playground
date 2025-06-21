@@ -8,7 +8,7 @@ panel.plugin("wsydney76/testimonial", {
       },
       template: `
         <blockquote class="k-block-type-testimonial-quote" @dblclick="open">
-          <k-writer
+          <k-writer-input
             ref="quote"
             :inline="true"
             :marks="false"
@@ -26,7 +26,7 @@ panel.plugin("wsydney76/testimonial", {
                 :alt="'Photo of ' + content.name"
               >
               <figcaption>
-                <k-writer
+                <k-writer-input
                   ref="name"
                   :inline="true"
                   :marks="false"
@@ -35,7 +35,7 @@ panel.plugin("wsydney76/testimonial", {
                   @input="update({ name: $event })"
                 />
                 <div class="k-block-type-testimonial-bio">
-                  <k-writer
+                  <k-writer-input
                     ref="jobposition"
                     :inline="true"
                     :marks="false"
@@ -43,7 +43,7 @@ panel.plugin("wsydney76/testimonial", {
                     :placeholder="field('jobposition').placeholder"
                     @input="update({ jobposition: $event })"
                   />
-                  <k-writer
+                  <k-writer-input
                     ref="company"
                     :inline="true"
                     :marks="false"

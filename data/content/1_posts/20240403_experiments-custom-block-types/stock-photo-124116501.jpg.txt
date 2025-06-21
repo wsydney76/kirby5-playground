@@ -1,0 +1,13 @@
+Alt: 
+
+----
+
+Copyright: 
+
+----
+
+Uuid: bwejf8vpvimckr3m
+
+----
+
+Template: image

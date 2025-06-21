@@ -7,7 +7,7 @@ panel.plugin('wsydney76/infobox', {
 
           <k-icon :type="icon" />
 
-          <k-writer
+          <k-writer-input
             ref="input"
             :nodes="false"
             :marks="field('text').marks"

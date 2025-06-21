@@ -5,7 +5,7 @@ panel.plugin('wsydney76/cta', {
       template: `
         <div>
 
-          <k-writer
+          <k-writer-input
             ref="heading"
             :nodes="false"
             :marks="field('heading').marks"
@@ -37,7 +37,7 @@ panel.plugin('wsydney76/cta', {
 
 
           <div class="body">
-            <k-writer
+            <k-writer-input
               :nodes="false"
               :marks="field('body').marks"
               :inline="field('body').inline"
@@ -51,7 +51,7 @@ panel.plugin('wsydney76/cta', {
 
           <div v-if="target.url">
             <div class="button">
-              <k-writer
+              <k-writer-input
                 :nodes="false"
                 :marks="field('caption').marks"
                 :inline="field('caption').inline"

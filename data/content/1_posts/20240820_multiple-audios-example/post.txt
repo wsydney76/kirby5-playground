@@ -21,11 +21,12 @@ Bodycontent:
             "source": [
                 "file://AZWwOcmnhWttbsGb"
             ],
-            "title": "Georg Kreisler: Im Park",
+            "audiotitle": "Taubenvergiften im Park",
             "subtitle": "Die alten, bösen Lieder",
             "description": "Schatz, das Wetter ist wunderschön<br>Da leid ich's net länger zuhaus...",
             "controls": "true",
-            "autoplay": "true"
+            "autoplay": "true",
+            "title": "Georg Kreisler: Im Park"
         },
         "id": "c5266673-2bea-4fae-a96e-d6d5cd3a0f7f",
         "isHidden": false,
@@ -39,11 +40,12 @@ Bodycontent:
             "source": [
                 "file://FnUUSahupb9xGzel"
             ],
-            "title": "Ute Lemper: Ich weiß nicht, zu wem ich gehöre",
+            "audiotitle": "Ich bin doch zu schade...",
             "subtitle": "Berlin Cabaret Songs",
             "description": "ich bin doch zu schade für einen allein...",
             "controls": "true",
-            "autoplay": "false"
+            "autoplay": "false",
+            "title": "Ute Lemper: Ich weiß nicht, zu wem ich gehöre"
         },
         "id": "e5b12542-67c7-462a-83d6-2bab455785ee",
         "isHidden": false,
