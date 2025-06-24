@@ -3,7 +3,7 @@ columns:
   - width: 1/2
     fields:
       entriesheading:
-        label: Entries
+        label: Entries - Repeatable fields
         type: headline
       entriestext:
         type: entries

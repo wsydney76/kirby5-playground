@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3eeab04481aac20518b001f3be784738",
+    "content-hash": "9403734eeb7f0648ec9feae5d1d06a60",
     "packages": [
         {
             "name": "christian-riesen/base32",
@@ -399,16 +399,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "5.0.0-rc.6",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "eff9881fb1e4ac7b4f5d7d115f1d5f0a2d2c2a90"
+                "reference": "2ff182ba39ddea19fa1615bd3733f734b5e53842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/eff9881fb1e4ac7b4f5d7d115f1d5f0a2d2c2a90",
-                "reference": "eff9881fb1e4ac7b4f5d7d115f1d5f0a2d2c2a90",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/2ff182ba39ddea19fa1615bd3733f734b5e53842",
+                "reference": "2ff182ba39ddea19fa1615bd3733f734b5e53842",
                 "shasum": ""
             },
             "require": {
@@ -499,7 +499,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-06-20T08:55:05+00:00"
+            "time": "2025-06-24T07:42:42+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -2700,9 +2700,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "getkirby/cms": 5
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
