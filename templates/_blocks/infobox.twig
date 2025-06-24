@@ -21,7 +21,7 @@
     {% set type = block.infoboxtype.value ?? 'info' %}
 
     <div class="not-prose">
-        <div class="flex items-center space-x-4 my-8 px-4 py-2 rounded border {{ typeLUT[type].classes }}">
+        <div class="flex items-center space-x-4 my-8 px-4 py-2 rounded-sm border {{ typeLUT[type].classes }}">
             <div class="shrink-0">
                 {% include "_icons/#{typeLUT[type].icon}.svg" %}
             </div>

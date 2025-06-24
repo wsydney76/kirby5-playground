@@ -3,9 +3,9 @@
 {% set file = block.source().toFile() %}
 {% set poster = block.poster().toFile() %}
 {% if file %}
-    <div class="not-prose my-8 flex bg-gray-950 text-white">
+    <div class="not-prose my-8 flex bg-slate-950 text-white">
         {% if poster %}
-            <figure class="flex-shrink-0">
+            <figure class="shrink-0">
                 {#{{ poster.crop(200, 280)|raw }}#}
                 {{ img(poster, {
                     transform: {width: 200, height: 250},
@@ -18,7 +18,7 @@
         <div class="px-8 py-4 flex items-center">
             <div>
                 <h2 class="text-2xl font-semibold">{{ block.title() }}</h2>
-                <h3 class="mt-2 text-2xl text-gray-300">{{ block.subtitle() }}</h3>
+                <h3 class="mt-2 text-2xl text-slate-300">{{ block.subtitle() }}</h3>
                 <div class="mt-4 text-sm">
                     {{ block.description|purify|nl2br }}
                 </div>

@@ -56,7 +56,7 @@
 {% elseif bgcolorwidth == 'full' and width != 'full' and bgcolor %}
     {# Constraint width with full background color #}
     <div class="full-width p-8" style="background-color: {{ bgcolor }}">
-        <div class="max-w-screen-md mx-auto">
+        <div class="max-w-(--breakpoint-md) mx-auto">
             <div class="{{ classes[width] }}">
                 {{ html }}
             </div>

@@ -17,16 +17,16 @@
 {% block content %}
 
     {# The search form #}
-    <form class="bg-white border border-brand-300 shadow-md p-4 md:flex md:space-x-4 items-center">
+    <form class="bg-white border border-slate-300 shadow-md p-4 md:flex md:space-x-4 items-center">
 
-        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 whitespace-nowrap" for="search-query">
+        <label class="block text-slate-500 font-bold md:text-right mb-1 md:mb-0 whitespace-nowrap" for="search-query">
             {{ 'Search for:'|t }}
         </label>
 
         <input type="search"
                id="search-query"
                autofocus
-               class="mb-1 md:mb-0 bg-brand-100 appearance-none border border-brand-300 w-full p-2 text-gray-700 leading-tight focus:outline-none focus:bg-brand-50 focus:border-black"
+               class="mb-1 md:mb-0 bg-slate-100 appearance-none border border-slate-300 w-full p-2 text-slate-700 leading-tight focus:outline-hidden focus:bg-slate-50 focus:border-black"
                name="q"
                value="{{ searchQuery }}">
 
