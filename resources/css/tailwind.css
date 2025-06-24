@@ -5,28 +5,10 @@
 @theme {
   --breakpoint-xl: 1200px;
 }
-
+/* Always generate the following classes for dynamic column spans/colors */
 @source inline("{lg:,}col-span-{1,2,3,4,5,6,7,8,9,10,11,12}");
 @source inline("bg-layout-light");
 @source inline("bg-layout-dark");
-
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
-}
 
 @utility bg-layout-light {
   @apply p-8 bg-sky-200;
