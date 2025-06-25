@@ -1,8 +1,8 @@
 
 .k-block-type-testimonial {
-  border-left: 4px solid rgb(71, 85, 105);
+  border-left: 4px solid light-dark(rgb(71, 85, 105), var(--color-text));
   padding-left: .75rem;
-  color: rgb(71, 85, 105);
+  color: light-dark(rgb(71, 85, 105), var(--color-text));
 }
 
 .k-block-type-testimonial img {

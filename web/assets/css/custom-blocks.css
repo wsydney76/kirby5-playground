@@ -6,7 +6,7 @@
   font-family: var(--custom-input-font);
   font-size: 18px;
   line-height: 1.777777778;
-  color: rgb(51, 65, 85);
+  color: light-dark(rgb(51, 65, 85), var(--color-text));
 }
 
 .k-block-type-heading-input[data-level="h2"] {
@@ -14,7 +14,7 @@
   font-size: 30px;
   line-height: 1.333333;
   font-weight: 700;
-  color: rgb(15, 23, 42);
+  color: light-dark(rgb(15, 23, 42), var(--color-text));
 }
 
 .k-block-type-heading-input[data-level="h3"] {
@@ -22,7 +22,7 @@
   font-size: 24px;
   line-height: 1.5;
   font-weight: 600;
-  color: rgb(15, 23, 42);
+  color: light-dark(rgb(15, 23, 42), var(--color-text));
 }
 
 .k-block-type-quote-editor {
@@ -36,13 +36,13 @@
   line-height: 1.75rem;
   font-style: italic;
   font-weight: 600;
-  color: rgb(71, 85, 105);
+  color: light-dark(rgb(71, 85, 105), var(--color-text));
 }
 
 .k-block-type-quote-citation .k-text {
   font-style: italic;
   font-size: 18px;
-  color: rgb(71, 85, 105);
+  color: light-dark(rgb(71, 85, 105), var(--color-text));
 }
 
 .k-block-type-list-input li {

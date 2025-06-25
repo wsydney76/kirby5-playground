@@ -35,7 +35,7 @@ return [
 
     // Enable panel css customization
     'panel.css' => [
-        /*'assets/css/custom-panel.css',*/
+        'assets/css/custom-panel.css',
         'assets/css/custom-blocks.css'
     ],
 

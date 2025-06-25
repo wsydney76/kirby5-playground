@@ -1,14 +1,16 @@
 
 :root {
-  --menu-color-back: #E4EDF6;
-  --color-light: #F3F7FC;
+  --menu-color-back: light-dark(#F3F7FC, #1A1A1A);
+  --color-light: light-dark(#F3F7FC, #1F1F1F);
 }
 
 
-
+html, .k-header {
+  background-color: light-dark(#F3F7FC, #1F1F1F);
+}
 
 .k-block-type-fields-form {
-  background-color: var(--color-light);
+  background-color: light-dark(#F3F7FC, #1F1F1F);
 }
 
 .k-block-container:not(:last-of-type) {
