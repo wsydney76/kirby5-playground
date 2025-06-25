@@ -1,7 +1,7 @@
 {
-  "name": "kirby4-playground",
-  "version": "2.0.0",
-  "description": "Kirby 4 Playground",
+  "name": "kirby5-playground",
+  "version": "3.0.0",
+  "description": "Kirby 5 Playground",
   "type": "module",
   "main": "index.js",
   "scripts": {
