@@ -189,7 +189,7 @@ Bodycontent:
     },
     {
         "content": {
-            "text": "<p>Custom block type with Vue powered preview. <a href=\"https://www.youtube.com/watch?v=hGhrJru-PQ8&amp;t=1262s\" target=\"_blank\">From Kirby's guide.</a></p>"
+            "text": "<p>Custom block type with Vue powered preview. <a href=\"https://www.youtube.com/watch?v=hGhrJru-PQ8&amp;t=1262s\" target=\"_blank\">From </a><a href=\"https://getkirby.com/docs/guide/page-builder/complex-custom-block\" target=\"_blank\">Kirby's </a><a href=\"https://www.youtube.com/watch?v=hGhrJru-PQ8&amp;t=1262s\" target=\"_blank\">guide.</a></p>"
         },
         "id": "bd9b1a23-ff6b-4352-849e-5b26bd881308",
         "isHidden": false,
@@ -203,12 +203,12 @@ Bodycontent:
             "source": [
                 "file://419PSZgbGgoJTB2i"
             ],
-            "audiotitle": "Malaika",
+            "title": "Malaika",
             "subtitle": "By Lyambiko",
             "description": "Malaika Nakupenda Malaika is a Swahili song written by Tanzanian artist, Adam Salim in 1945 and recorded for the first time by Kenyan musician, Fadhili William. This song is possibly the most famous of all Swahili love songs in Tanzania, Kenya and the entire East Africa, as well as being one of the most widely known of all Swahili songs in the world. Malaika in this context means \"angel\" in Swahili, and this word has always been used by the Swahili speakers to refer to a beautiful girl.",
             "controls": "true",
             "autoplay": "false",
-            "title": "Malaika"
+            "audiotitle": "Malaika"
         },
         "id": "1e15ac9e-1b95-4787-b058-d36ec3754fe3",
         "isHidden": false,
