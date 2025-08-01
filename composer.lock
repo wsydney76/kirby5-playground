@@ -333,22 +333,22 @@
         },
         {
             "name": "getkirby/cli",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/cli.git",
-                "reference": "dd587fdcb152d07317100c2b9f0de281ad77e979"
+                "reference": "c2a8dd966e36d3bafda69e60349a92ca0aa4d24f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/cli/zipball/dd587fdcb152d07317100c2b9f0de281ad77e979",
-                "reference": "dd587fdcb152d07317100c2b9f0de281ad77e979",
+                "url": "https://api.github.com/repos/getkirby/cli/zipball/c2a8dd966e36d3bafda69e60349a92ca0aa4d24f",
+                "reference": "c2a8dd966e36d3bafda69e60349a92ca0aa4d24f",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2.2",
                 "ext-zip": "*",
-                "guzzlehttp/guzzle": "^7.9.2",
+                "guzzlehttp/guzzle": "^7.9.3",
                 "league/climate": "^3.10.0",
                 "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
@@ -395,20 +395,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-01-13T13:39:54+00:00"
+            "time": "2025-07-21T14:37:10+00:00"
         },
         {
             "name": "getkirby/cms",
-            "version": "5.0.2",
+            "version": "5.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "a57580ac93c643e2e4f84a804bb37b511d445349"
+                "reference": "572dab320d31a84ebb140eb0a4268f91b8a0572c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/a57580ac93c643e2e4f84a804bb37b511d445349",
-                "reference": "a57580ac93c643e2e4f84a804bb37b511d445349",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/572dab320d31a84ebb140eb0a4268f91b8a0572c",
+                "reference": "572dab320d31a84ebb140eb0a4268f91b8a0572c",
                 "shasum": ""
             },
             "require": {
@@ -499,7 +499,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-07-15T08:21:53+00:00"
+            "time": "2025-07-29T09:32:34+00:00"
         },
         {
             "name": "getkirby/composer-installer",
