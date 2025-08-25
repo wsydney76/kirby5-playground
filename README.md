@@ -71,6 +71,20 @@ Just one in `.env` for now:
 
 * disables debugging and enables twig template caching. Faster, but you have to clear the `storage/cache/twig` folder after each update of twig templates.
 
+__Note:__ 
+
+Depending on your webserver setup, you may need to update `web/index.php` and change this line:
+
+```php
+Dotenv\Dotenv::createUnsafeImmutable('..')->safeLoad();
+```
+
+to this:
+
+```php
+Dotenv\Dotenv::createUnsafeMutable('..')->safeLoad();
+```
+
 ## Screenshots
 
 ### Frontend
